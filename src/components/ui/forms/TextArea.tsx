@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Purpose: Multi-line text field input primitive supporting custom rows, resize modes, validation states, and character counter.
  * Used By: Recruiter Message Forms, Case Study Feedback, Architecture Notes, Contact Submissions.

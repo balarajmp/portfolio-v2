@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Purpose: Core single-line text input field primitive supporting types, icons, validation states, and clear triggers.
  * Used By: SearchInput, FormField, Recruiter Contact Forms, Command Palette Inputs, Filter Controls.
@@ -50,13 +52,13 @@ export interface InputProps
    */
   invalid?: boolean;
   /**
-   * Optional leading Lucide icon component reference
+   * Optional leading Lucide icon component reference or ReactNode
    */
-  leadingIcon?: LucideIcon;
+  leadingIcon?: LucideIcon | React.ReactNode;
   /**
-   * Optional trailing Lucide icon component reference
+   * Optional trailing Lucide icon component reference or ReactNode
    */
-  trailingIcon?: LucideIcon;
+  trailingIcon?: LucideIcon | React.ReactNode;
   /**
    * Displays 1-click clear button on the right edge of input when value is present
    * @default false
@@ -162,6 +164,16 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       return inputElement;
     }
 
+    // Helper renderer for icon prop (component vs ReactNode)
+    const renderIconSlot = (iconNode: LucideIcon | React.ReactNode) => {
+      if (!iconNode) return null;
+      if (typeof iconNode === "function" || (typeof iconNode === "object" && iconNode !== null && "render" in iconNode)) {
+        const IconComp = iconNode as LucideIcon;
+        return <IconComp className="h-full w-full text-current" />;
+      }
+      return iconNode;
+    };
+
     return (
       <div className="relative flex items-center w-full">
         {LeadingIcon && (
@@ -172,7 +184,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             )}
             aria-hidden="true"
           >
-            <LeadingIcon className="h-full w-full text-current" />
+            {renderIconSlot(LeadingIcon)}
           </div>
         )}
 
@@ -198,7 +210,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             )}
             aria-hidden="true"
           >
-            <TrailingIcon className="h-full w-full text-current" />
+            {renderIconSlot(TrailingIcon)}
           </div>
         ) : null}
       </div>

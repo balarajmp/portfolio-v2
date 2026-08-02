@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Purpose: Compact user headshot, author mark, or entity representation graphic component.
  * Used By: Recruiter Command Bar, Testimonial Cards, Author Meta Headers, System Status Avatars.

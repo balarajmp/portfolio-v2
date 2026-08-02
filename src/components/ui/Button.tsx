@@ -92,14 +92,20 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, size, className }))}
         {...props}
       >
-        {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin shrink-0 text-current" />
+        {asChild ? (
+          children
         ) : (
-          LeftIcon && <LeftIcon className="h-4 w-4 shrink-0 text-current" />
-        )}
-        {children}
-        {!loading && RightIcon && (
-          <RightIcon className="h-4 w-4 shrink-0 text-current" />
+          <>
+            {loading ? (
+              <Loader2 className="h-4 w-4 animate-spin shrink-0 text-current" />
+            ) : (
+              LeftIcon && <LeftIcon className="h-4 w-4 shrink-0 text-current" />
+            )}
+            {children}
+            {!loading && RightIcon && (
+              <RightIcon className="h-4 w-4 shrink-0 text-current" />
+            )}
+          </>
         )}
       </Component>
     );
