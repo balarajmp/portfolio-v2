@@ -3,6 +3,7 @@ import { Hero } from "@/components/features/hero";
 import { RecruiterCommandCenter } from "@/components/features/recruiter";
 import { FeaturedProjects } from "@/components/features/projects";
 import { SkillsMatrix } from "@/components/features/skills";
+import { EngineeringJourney } from "@/components/features/journey";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <RecruiterCommandCenter />
       <FeaturedProjects />
       <SkillsMatrix />
+      <EngineeringJourney />
     </AppShell>
   );
 }
