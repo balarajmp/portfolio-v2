@@ -2,46 +2,31 @@ import type { FAQItem } from "@/types";
 
 /**
  * Recruiter & Engineering FAQs Data Collection
+ * Refactored to focus on verified platform capabilities and candidate engagement.
  */
 export const faqs: ReadonlyArray<FAQItem> = [
   {
-    id: "faq-resume",
-    question: "Where can I download your official PDF resume?",
-    answer: "You can download my latest PDF resume instantly by clicking the 'Download Resume' button in the header, in the Hero recruiter bar, or by pressing Cmd + K and typing 'Download Resume'.",
-    audience: "recruiter",
+    id: "faq-codebase",
+    question: "Where can I inspect the source code and repository architecture?",
+    answer: "This entire platform is open source and hosted on GitHub at github.com/balarajmp/portfolio-v2. It features strict TypeScript domain contracts, Next.js 14 App Router, and Vercel/Linear design token aesthetics.",
+    audience: "engineer",
     displayOrder: 1,
     isFeatured: true,
   },
   {
-    id: "faq-availability",
-    question: "What is your current notice period and availability?",
-    answer: "My current notice period is 30 days (negotiable for the right opportunity). I am actively open to Senior Software Engineer, Staff Software Engineer, and Full Stack Tech Lead roles across Remote, Hybrid, and relocate options.",
+    id: "faq-resume",
+    question: "Where can I download the official PDF resume?",
+    answer: "The resume PDF can be downloaded directly from the header, the recruiter bar, or via the Command Palette (Cmd + K).", // TODO: Update link once resume PDF is uploaded to public/resume.pdf
     audience: "recruiter",
     displayOrder: 2,
     isFeatured: true,
   },
   {
-    id: "faq-stack",
-    question: "What are your core technical specializations?",
-    answer: "My core technical stack includes TypeScript, React 18, Next.js 14 (App Router / RSC), Python (FastAPI), Node.js, PostgreSQL, Redis, Docker, and Tailwind CSS. I specialize in building high-performance web applications and distributed systems microservices.",
-    audience: "hiring-manager",
-    displayOrder: 3,
-    isFeatured: true,
-  },
-  {
-    id: "faq-codebase",
-    question: "Where can I inspect your code quality and repository architecture?",
-    answer: "All primary codebase repositories are hosted on my public GitHub profile (github.com/balarajmp). You can inspect this portfolio's source code directly at github.com/balarajmp/portfolio-v2.",
-    audience: "engineer",
-    displayOrder: 4,
-    isFeatured: true,
-  },
-  {
     id: "faq-contact",
-    question: "How can I schedule a 15-minute introductory call?",
-    answer: "You can reach out directly via email at balarajmp@gmail.com or schedule an intro call using the Calendly trigger in the recruiter actions bar.",
+    question: "How can I contact Balaraj M P directly?",
+    answer: "You can reach out via GitHub (github.com/balarajmp) or via email at balarajmp@gmail.com.", // TODO: Fill with real email address
     audience: "recruiter",
-    displayOrder: 5,
+    displayOrder: 3,
     isFeatured: true,
   },
 ];

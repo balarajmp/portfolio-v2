@@ -2,6 +2,7 @@ import type { SkillCategory } from "@/types";
 
 /**
  * Tech Radar & Skill Categories Matrix
+ * Strictly verified stack used in this codebase (portfolio-v2).
  */
 export const skillCategories: ReadonlyArray<SkillCategory> = [
   {
@@ -16,9 +17,9 @@ export const skillCategories: ReadonlyArray<SkillCategory> = [
         slug: "typescript",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 4,
+        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
         iconName: "FileCode",
-        verifiedProjectIds: ["portfolio-v2", "cognitoshield-ai"],
+        verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
       {
@@ -27,9 +28,9 @@ export const skillCategories: ReadonlyArray<SkillCategory> = [
         slug: "nextjs",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 3,
+        yearsOfExperience: 2, // TODO: Fill with candidate's actual years of experience
         iconName: "Globe",
-        verifiedProjectIds: ["portfolio-v2", "cognitoshield-ai"],
+        verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
       {
@@ -38,9 +39,9 @@ export const skillCategories: ReadonlyArray<SkillCategory> = [
         slug: "react",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 4,
+        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
         iconName: "Atom",
-        verifiedProjectIds: ["portfolio-v2", "cognitoshield-ai", "fintech-ui-system"],
+        verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
       {
@@ -49,123 +50,31 @@ export const skillCategories: ReadonlyArray<SkillCategory> = [
         slug: "tailwindcss",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 3,
+        yearsOfExperience: 2, // TODO: Fill with candidate's actual years of experience
         iconName: "Palette",
-        verifiedProjectIds: ["portfolio-v2", "cognitoshield-ai"],
-        isFeatured: true,
-      },
-      {
-        id: "sk-flutter",
-        name: "Flutter / Dart",
-        slug: "flutter",
-        categoryId: "cat-frontend",
-        proficiency: "proficient",
-        yearsOfExperience: 2,
-        iconName: "Smartphone",
-        verifiedProjectIds: ["fintech-ui-system"],
-        isFeatured: false,
-      },
-    ],
-  },
-  {
-    id: "cat-backend",
-    name: "Backend & Distributed Systems",
-    description: "Architecting high-throughput microservices, REST/gRPC APIs, and event-driven backends.",
-    displayOrder: 2,
-    skills: [
-      {
-        id: "sk-node",
-        name: "Node.js / Express",
-        slug: "nodejs",
-        categoryId: "cat-backend",
-        proficiency: "expert",
-        yearsOfExperience: 4,
-        iconName: "Server",
-        verifiedProjectIds: ["cognitoshield-ai"],
-        isFeatured: true,
-      },
-      {
-        id: "sk-py",
-        name: "Python / FastAPI",
-        slug: "fastapi",
-        categoryId: "cat-backend",
-        proficiency: "expert",
-        yearsOfExperience: 3,
-        iconName: "Terminal",
-        verifiedProjectIds: ["cognitoshield-ai"],
-        isFeatured: true,
-      },
-      {
-        id: "sk-rest",
-        name: "REST & WebSockets",
-        slug: "rest-websockets",
-        categoryId: "cat-backend",
-        proficiency: "expert",
-        yearsOfExperience: 4,
-        iconName: "Radio",
-        verifiedProjectIds: ["cognitoshield-ai"],
-        isFeatured: true,
-      },
-    ],
-  },
-  {
-    id: "cat-data",
-    name: "Databases & Storage",
-    description: "Designing relational relational schemas, Redis caching layers, and high-speed query indexing.",
-    displayOrder: 3,
-    skills: [
-      {
-        id: "sk-pg",
-        name: "PostgreSQL",
-        slug: "postgresql",
-        categoryId: "cat-data",
-        proficiency: "expert",
-        yearsOfExperience: 4,
-        iconName: "Database",
-        verifiedProjectIds: ["cognitoshield-ai"],
-        isFeatured: true,
-      },
-      {
-        id: "sk-redis",
-        name: "Redis",
-        slug: "redis",
-        categoryId: "cat-data",
-        proficiency: "proficient",
-        yearsOfExperience: 3,
-        iconName: "Zap",
-        verifiedProjectIds: ["cognitoshield-ai"],
+        verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
     ],
   },
   {
     id: "cat-devops",
-    name: "Infrastructure & Testing",
-    description: "Containerization, automated CI/CD pipelines, and WCAG accessibility testing.",
-    displayOrder: 4,
+    name: "Infrastructure & Tools",
+    description: "Version control, automated build validation, and project toolchains.",
+    displayOrder: 2,
     skills: [
       {
-        id: "sk-docker",
-        name: "Docker & Containerization",
-        slug: "docker",
-        categoryId: "cat-devops",
-        proficiency: "proficient",
-        yearsOfExperience: 3,
-        iconName: "Container",
-        verifiedProjectIds: ["cognitoshield-ai"],
-        isFeatured: true,
-      },
-      {
         id: "sk-git",
-        name: "Git & GitHub Actions",
-        slug: "git-ci-cd",
+        name: "Git & GitHub",
+        slug: "git",
         categoryId: "cat-devops",
         proficiency: "expert",
-        yearsOfExperience: 4,
+        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
         iconName: "GitBranch",
-        verifiedProjectIds: ["portfolio-v2", "cognitoshield-ai"],
+        verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
     ],
   },
+  // TODO: Add candidate's additional verified skills and categories
 ];

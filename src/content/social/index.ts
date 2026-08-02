@@ -2,6 +2,7 @@ import type { SocialLink, CodingProfile } from "@/types";
 
 /**
  * Social Links Collection
+ * Contains strictly verified GitHub profile link. Unverified handles marked with TODOs.
  */
 export const socialLinks: ReadonlyArray<SocialLink> = [
   {
@@ -16,17 +17,6 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
     iconName: "Github",
   },
   {
-    id: "soc-linkedin",
-    platform: "linkedin",
-    username: "balarajmp", // TODO: Fill with real LinkedIn username
-    label: "LinkedIn",
-    url: "https://linkedin.com/in/balarajmp", // TODO: Fill with real LinkedIn URL
-    isExternal: true,
-    isPrimary: true,
-    ariaLabel: "Connect with Balaraj M P on LinkedIn",
-    iconName: "Linkedin",
-  },
-  {
     id: "soc-email",
     platform: "email",
     username: "balarajmp@gmail.com", // TODO: Fill with real email address
@@ -37,6 +27,7 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
     ariaLabel: "Send an email to Balaraj M P",
     iconName: "Mail",
   },
+  // TODO: Add LinkedIn and Twitter links once verified
 ];
 
 /**
@@ -48,18 +39,6 @@ export const codingProfiles: ReadonlyArray<CodingProfile> = [
     platform: "github",
     username: "balarajmp",
     profileUrl: "https://github.com/balarajmp",
-    metrics: {
-      totalContributions: 450, // TODO: Fill with exact GitHub contributions count
-    },
   },
-  {
-    id: "cp-leetcode",
-    platform: "leetcode",
-    username: "balarajmp", // TODO: Fill with real LeetCode handle
-    profileUrl: "https://leetcode.com/u/balarajmp", // TODO: Fill with real LeetCode profile link
-    metrics: {
-      solvedCount: 320, // TODO: Fill with exact LeetCode solved count
-      globalRank: "Top 8%", // TODO: Fill with exact rank
-    },
-  },
+  // TODO: Add LeetCode / competitive programming profiles once verified
 ];
