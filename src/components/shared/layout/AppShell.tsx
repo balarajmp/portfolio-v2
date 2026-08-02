@@ -7,7 +7,8 @@
 
 import * as React from "react";
 import { SkipLink } from "./SkipLink";
-import { AppHeader, type AppHeaderProps } from "./AppHeader";
+import { type AppHeaderProps } from "./AppHeader";
+import { Navigation } from "@/components/shared/navigation/Navigation";
 import { AppMain } from "./AppMain";
 import { AppFooter, type AppFooterProps } from "./AppFooter";
 import { PageTransition } from "./PageTransition";
@@ -84,7 +85,7 @@ export const AppShell = React.forwardRef<HTMLDivElement, AppShellProps>(
         <SkipLink targetId={skipLinkTargetId} />
 
         {/* Header Bar */}
-        {showHeader && <AppHeader {...headerProps} />}
+        {showHeader && <Navigation {...headerProps} />}
 
         {/* Main Content Area */}
         <AppMain id={skipLinkTargetId} container={container} containerSize={containerSize}>
