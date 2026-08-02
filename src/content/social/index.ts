@@ -3,6 +3,7 @@ import type { SocialLink, CodingProfile } from "@/types";
 /**
  * Social Links Collection
  * Strictly verified links for Balaraj M P.
+ * Added: LeetCode profile.
  */
 export const socialLinks: ReadonlyArray<SocialLink> = [
   {
@@ -28,6 +29,17 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
     iconName: "Linkedin",
   },
   {
+    id: "soc-leetcode",
+    platform: "leetcode",
+    username: "balarajmp",
+    label: "LeetCode",
+    url: "https://leetcode.com/u/balarajmp",
+    isExternal: true,
+    isPrimary: false,
+    ariaLabel: "View LeetCode Profile for balarajmp",
+    iconName: "Code2",
+  },
+  {
     id: "soc-email",
     platform: "email",
     username: "balarajmp@gmail.com",
@@ -49,5 +61,11 @@ export const codingProfiles: ReadonlyArray<CodingProfile> = [
     platform: "github",
     username: "balarajmp",
     profileUrl: "https://github.com/balarajmp",
+  },
+  {
+    id: "cp-leetcode",
+    platform: "leetcode",
+    username: "balarajmp",
+    profileUrl: "https://leetcode.com/u/balarajmp",
   },
 ];
