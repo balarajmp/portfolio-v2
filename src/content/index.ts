@@ -16,3 +16,4 @@ export * from "./social";
 export * from "./site";
 export * from "./seo";
 export * from "./journey";
+export * from "./about";

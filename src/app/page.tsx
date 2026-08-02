@@ -5,6 +5,7 @@ import { FeaturedProjects } from "@/components/features/projects";
 import { SkillsMatrix } from "@/components/features/skills";
 import { EngineeringJourney } from "@/components/features/journey";
 import { EducationSection } from "@/components/features/education";
+import { AboutSection } from "@/components/features/about";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <SkillsMatrix />
       <EngineeringJourney />
       <EducationSection />
+      <AboutSection />
     </AppShell>
   );
 }
