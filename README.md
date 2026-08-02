@@ -72,7 +72,7 @@ portfolio-v2/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Balar/portfolio-v2.git
+git clone https://github.com/balarajmp/portfolio-v2.git
 
 # Navigate to project directory
 cd portfolio-v2
