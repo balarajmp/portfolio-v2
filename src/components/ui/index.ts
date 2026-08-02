@@ -15,3 +15,7 @@ export { Icon, type IconProps, type IconSize, type IconColor } from "./Icon";
 
 // Re-export Layout Primitives
 export * from "./layout";
+
+// Re-export Composite Components
+export * from "./composite";
+
