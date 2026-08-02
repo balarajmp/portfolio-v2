@@ -1,8 +1,10 @@
+import { AppShell } from "@/components/shared/layout";
+import { Hero } from "@/components/features/hero";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-2xl font-bold tracking-tight">Engineering Portfolio Platform</h1>
-      <p className="mt-2 text-sm text-zinc-400">Project initialization complete.</p>
-    </main>
+    <AppShell container={false}>
+      <Hero />
+    </AppShell>
   );
 }

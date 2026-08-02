@@ -2,7 +2,7 @@ import type { SocialLink, CodingProfile } from "@/types";
 
 /**
  * Social Links Collection
- * Contains strictly verified GitHub profile link. Unverified handles marked with TODOs.
+ * Strictly verified links for Balaraj M P.
  */
 export const socialLinks: ReadonlyArray<SocialLink> = [
   {
@@ -17,17 +17,27 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
     iconName: "Github",
   },
   {
+    id: "soc-linkedin",
+    platform: "linkedin",
+    username: "balarajmp",
+    label: "LinkedIn",
+    url: "https://linkedin.com/in/balarajmp",
+    isExternal: true,
+    isPrimary: true,
+    ariaLabel: "View LinkedIn Profile for Balaraj M P",
+    iconName: "Linkedin",
+  },
+  {
     id: "soc-email",
     platform: "email",
-    username: "balarajmp@gmail.com", // TODO: Fill with real email address
+    username: "balarajmp@gmail.com",
     label: "Email",
-    url: "mailto:balarajmp@gmail.com", // TODO: Fill with real email address
+    url: "mailto:balarajmp@gmail.com",
     isExternal: true,
     isPrimary: true,
     ariaLabel: "Send an email to Balaraj M P",
     iconName: "Mail",
   },
-  // TODO: Add LinkedIn and Twitter links once verified
 ];
 
 /**
@@ -40,5 +50,4 @@ export const codingProfiles: ReadonlyArray<CodingProfile> = [
     username: "balarajmp",
     profileUrl: "https://github.com/balarajmp",
   },
-  // TODO: Add LeetCode / competitive programming profiles once verified
 ];

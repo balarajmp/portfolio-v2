@@ -1,80 +1,228 @@
-import type { SkillCategory } from "@/types";
+import type { SkillCategory, Skill } from "@/types";
 
 /**
- * Tech Radar & Skill Categories Matrix
- * Strictly verified stack used in this codebase (portfolio-v2).
+ * Technical Competencies & Skill Matrix
+ * Contains strictly verified stack used by candidate (Balaraj M P).
  */
 export const skillCategories: ReadonlyArray<SkillCategory> = [
   {
-    id: "cat-frontend",
-    name: "Frontend & UI Architecture",
-    description: "Building accessible, sub-50ms responsive user interfaces and scalable design token systems.",
+    id: "cat-languages",
+    name: "Languages & Core CS",
+    description: "Core programming languages and fundamental computer science building blocks.",
     displayOrder: 1,
     skills: [
       {
-        id: "sk-ts",
-        name: "TypeScript",
-        slug: "typescript",
-        categoryId: "cat-frontend",
+        id: "sk-python",
+        name: "Python",
+        slug: "python",
+        categoryId: "cat-languages",
         proficiency: "expert",
-        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
+        yearsOfExperience: 3,
         iconName: "FileCode",
         verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
       {
-        id: "sk-next",
-        name: "Next.js 14+ (App Router)",
-        slug: "nextjs",
-        categoryId: "cat-frontend",
-        proficiency: "expert",
-        yearsOfExperience: 2, // TODO: Fill with candidate's actual years of experience
-        iconName: "Globe",
-        verifiedProjectIds: ["portfolio-v2"],
+        id: "sk-java",
+        name: "Java",
+        slug: "java",
+        categoryId: "cat-languages",
+        proficiency: "proficient",
+        yearsOfExperience: 2,
+        iconName: "Code2",
+        verifiedProjectIds: [],
         isFeatured: true,
       },
       {
+        id: "sk-sql",
+        name: "SQL",
+        slug: "sql",
+        categoryId: "cat-languages",
+        proficiency: "expert",
+        yearsOfExperience: 3,
+        iconName: "Database",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+      {
+        id: "sk-c",
+        name: "C",
+        slug: "c",
+        categoryId: "cat-languages",
+        proficiency: "competent",
+        yearsOfExperience: 2,
+        iconName: "Terminal",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+    ],
+  },
+  {
+    id: "cat-frontend",
+    name: "Frontend Frameworks",
+    description: "Building responsive, modern user interfaces and component design systems.",
+    displayOrder: 2,
+    skills: [
+      {
         id: "sk-react",
-        name: "React 18",
+        name: "React",
         slug: "react",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
+        yearsOfExperience: 3,
         iconName: "Atom",
         verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
       {
-        id: "sk-tailwind",
-        name: "Tailwind CSS",
-        slug: "tailwindcss",
+        id: "sk-next",
+        name: "Next.js",
+        slug: "nextjs",
         categoryId: "cat-frontend",
         proficiency: "expert",
-        yearsOfExperience: 2, // TODO: Fill with candidate's actual years of experience
-        iconName: "Palette",
+        yearsOfExperience: 2,
+        iconName: "Globe",
         verifiedProjectIds: ["portfolio-v2"],
+        isFeatured: true,
+      },
+    ],
+  },
+  {
+    id: "cat-backend",
+    name: "Backend & Web Services",
+    description: "High-performance REST APIs, server frameworks, and asynchronous runtimes.",
+    displayOrder: 3,
+    skills: [
+      {
+        id: "sk-fastapi",
+        name: "FastAPI",
+        slug: "fastapi",
+        categoryId: "cat-backend",
+        proficiency: "expert",
+        yearsOfExperience: 2,
+        iconName: "Zap",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+      {
+        id: "sk-nodejs",
+        name: "Node.js",
+        slug: "nodejs",
+        categoryId: "cat-backend",
+        proficiency: "expert",
+        yearsOfExperience: 3,
+        iconName: "Server",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+      {
+        id: "sk-express",
+        name: "Express.js",
+        slug: "express",
+        categoryId: "cat-backend",
+        proficiency: "expert",
+        yearsOfExperience: 2,
+        iconName: "Cpu",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+    ],
+  },
+  {
+    id: "cat-databases",
+    name: "Databases & Data Stores",
+    description: "Relational database engines, indexing strategies, and lightweight data persistence.",
+    displayOrder: 4,
+    skills: [
+      {
+        id: "sk-sqlite",
+        name: "SQLite",
+        slug: "sqlite",
+        categoryId: "cat-databases",
+        proficiency: "expert",
+        yearsOfExperience: 2,
+        iconName: "HardDrive",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+      {
+        id: "sk-mysql",
+        name: "MySQL",
+        slug: "mysql",
+        categoryId: "cat-databases",
+        proficiency: "proficient",
+        yearsOfExperience: 2,
+        iconName: "Database",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+    ],
+  },
+  {
+    id: "cat-ml",
+    name: "Machine Learning & AI",
+    description: "Predictive analytics models, data processing pipelines, and gradient boosting algorithms.",
+    displayOrder: 5,
+    skills: [
+      {
+        id: "sk-scikit",
+        name: "Scikit-Learn",
+        slug: "scikit-learn",
+        categoryId: "cat-ml",
+        proficiency: "proficient",
+        yearsOfExperience: 2,
+        iconName: "BrainCircuit",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
+      {
+        id: "sk-xgboost",
+        name: "XGBoost",
+        slug: "xgboost",
+        categoryId: "cat-ml",
+        proficiency: "proficient",
+        yearsOfExperience: 2,
+        iconName: "TrendingUp",
+        verifiedProjectIds: [],
         isFeatured: true,
       },
     ],
   },
   {
     id: "cat-devops",
-    name: "Infrastructure & Tools",
-    description: "Version control, automated build validation, and project toolchains.",
-    displayOrder: 2,
+    name: "DevOps & Tooling",
+    description: "Containerization environments, distribution workflows, and version control.",
+    displayOrder: 6,
     skills: [
       {
         id: "sk-git",
-        name: "Git & GitHub",
+        name: "Git",
         slug: "git",
         categoryId: "cat-devops",
         proficiency: "expert",
-        yearsOfExperience: 3, // TODO: Fill with candidate's actual years of experience
+        yearsOfExperience: 3,
         iconName: "GitBranch",
         verifiedProjectIds: ["portfolio-v2"],
         isFeatured: true,
       },
+      {
+        id: "sk-docker",
+        name: "Docker",
+        slug: "docker",
+        categoryId: "cat-devops",
+        proficiency: "proficient",
+        yearsOfExperience: 2,
+        iconName: "Container",
+        verifiedProjectIds: [],
+        isFeatured: true,
+      },
     ],
   },
-  // TODO: Add candidate's additional verified skills and categories
 ];
+
+/**
+ * Flat list of all featured hero tech stack skills for direct mapping.
+ */
+export const heroTechStackSkills: ReadonlyArray<Skill> = skillCategories.flatMap(
+  (cat) => cat.skills.filter((skill) => skill.isFeatured)
+);
