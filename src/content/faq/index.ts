@@ -2,7 +2,7 @@ import type { FAQItem } from "@/types";
 
 /**
  * Recruiter & Engineering FAQs Data Collection
- * Refactored to focus on verified platform capabilities and candidate engagement.
+ * Verified platform capabilities and candidate engagement details.
  */
 export const faqs: ReadonlyArray<FAQItem> = [
   {
@@ -16,7 +16,7 @@ export const faqs: ReadonlyArray<FAQItem> = [
   {
     id: "faq-resume",
     question: "Where can I download the official PDF resume?",
-    answer: "The resume PDF can be downloaded directly from the header, the recruiter bar, or via the Command Palette (Cmd + K).", // TODO: Update link once resume PDF is uploaded to public/resume.pdf
+    answer: "The resume PDF can be downloaded directly from the header, recruiter bar, or via the Command Palette (Ctrl+K / Cmd+K).", // TODO: Add resume PDF asset to public/resume.pdf
     audience: "recruiter",
     displayOrder: 2,
     isFeatured: true,
@@ -24,7 +24,7 @@ export const faqs: ReadonlyArray<FAQItem> = [
   {
     id: "faq-contact",
     question: "How can I contact Balaraj M P directly?",
-    answer: "You can reach out via GitHub (github.com/balarajmp) or via email at balarajmp@gmail.com.", // TODO: Fill with real email address
+    answer: "You can reach out via email at balarajmp05@gmail.com, LinkedIn (linkedin.com/in/balaraj-m-p), or GitHub (github.com/balarajmp).",
     audience: "recruiter",
     displayOrder: 3,
     isFeatured: true,

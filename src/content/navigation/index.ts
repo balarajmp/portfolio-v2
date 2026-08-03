@@ -2,6 +2,7 @@ import type { NavigationConfig } from "@/types";
 
 /**
  * Configuration-Driven Global Navigation Structure
+ * Sourced from verified candidate links for Balaraj M P.
  */
 export const navigation: NavigationConfig = {
   headerNav: [
@@ -14,10 +15,10 @@ export const navigation: NavigationConfig = {
     },
     {
       id: "nav-experience",
-      label: "Experience",
-      url: "/#experience",
-      shortcut: "G E",
-      ariaLabel: "Navigate to Professional Experience",
+      label: "Journey",
+      url: "/#journey",
+      shortcut: "G J",
+      ariaLabel: "Navigate to Journey & Education",
     },
     {
       id: "nav-skills",
@@ -48,9 +49,9 @@ export const navigation: NavigationConfig = {
       iconName: "FolderGit2",
     },
     {
-      id: "mob-experience",
-      label: "Experience",
-      url: "/#experience",
+      id: "mob-journey",
+      label: "Journey",
+      url: "/#journey",
       iconName: "Briefcase",
     },
     {
@@ -73,7 +74,7 @@ export const navigation: NavigationConfig = {
       items: [
         { id: "cmd-home", label: "Go to Home Page", url: "/", shortcut: "G H" },
         { id: "cmd-projects", label: "Go to Featured Projects", url: "/#projects", shortcut: "G P" },
-        { id: "cmd-experience", label: "Go to Career Experience", url: "/#experience", shortcut: "G E" },
+        { id: "cmd-journey", label: "Go to Journey & Education", url: "/#journey", shortcut: "G J" },
         { id: "cmd-skills", label: "Go to Tech Radar", url: "/#skills", shortcut: "G S" },
         { id: "cmd-about", label: "Go to About & Mindset", url: "/#about", shortcut: "G A" },
       ],
@@ -82,9 +83,8 @@ export const navigation: NavigationConfig = {
       id: "sec-recruiter",
       title: "Recruiter Quick Actions",
       items: [
-        { id: "cmd-resume", label: "Download Resume PDF", url: "/resume.pdf", isPrimaryCTA: true, shortcut: "D R" },
-        { id: "cmd-email", label: "Send Direct Email", url: "mailto:balarajmp@gmail.com", isExternal: true, shortcut: "C E" },
-        { id: "cmd-call", label: "Schedule Intro Call", url: "https://calendly.com", isExternal: true, shortcut: "S C" }, // TODO: Fill with real Calendly link
+        { id: "cmd-resume", label: "Download Resume PDF", url: "/resume.pdf", isPrimaryCTA: true, shortcut: "D R" }, // TODO: Add resume PDF to public/resume.pdf
+        { id: "cmd-email", label: "Send Direct Email", url: "mailto:balarajmp05@gmail.com", isExternal: true, shortcut: "C E" },
       ],
     },
     {
@@ -92,7 +92,8 @@ export const navigation: NavigationConfig = {
       title: "Developer Profiles",
       items: [
         { id: "cmd-github", label: "GitHub Profile", url: "https://github.com/balarajmp", isExternal: true },
-        { id: "cmd-linkedin", label: "LinkedIn Profile", url: "https://linkedin.com/in/balarajmp", isExternal: true }, // TODO: Fill with real LinkedIn URL
+        { id: "cmd-linkedin", label: "LinkedIn Profile", url: "https://www.linkedin.com/in/balaraj-m-p/", isExternal: true },
+        { id: "cmd-leetcode", label: "LeetCode Profile", url: "https://leetcode.com/u/Balaraj_m_p/", isExternal: true },
       ],
     },
   ],
@@ -103,7 +104,7 @@ export const navigation: NavigationConfig = {
       items: [
         { id: "ft-nav-home", label: "Home", url: "/" },
         { id: "ft-nav-projects", label: "Projects", url: "/#projects" },
-        { id: "ft-nav-experience", label: "Experience", url: "/#experience" },
+        { id: "ft-nav-journey", label: "Journey", url: "/#journey" },
         { id: "ft-nav-skills", label: "Tech Stack", url: "/#skills" },
       ],
     },
@@ -111,8 +112,8 @@ export const navigation: NavigationConfig = {
       id: "ft-recruiter",
       title: "Recruiter Assets",
       items: [
-        { id: "ft-rec-resume", label: "PDF Resume", url: "/resume.pdf" },
-        { id: "ft-rec-email", label: "Direct Email", url: "mailto:balarajmp@gmail.com", isExternal: true },
+        { id: "ft-rec-resume", label: "PDF Resume", url: "/resume.pdf" }, // TODO: Add resume PDF to public/resume.pdf
+        { id: "ft-rec-email", label: "Direct Email", url: "mailto:balarajmp05@gmail.com", isExternal: true },
         { id: "ft-rec-status", label: "Availability Status", url: "/#contact" },
       ],
     },

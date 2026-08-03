@@ -3,7 +3,6 @@ import type { SocialLink, CodingProfile } from "@/types";
 /**
  * Social Links Collection
  * Strictly verified links for Balaraj M P.
- * Added: LeetCode profile.
  */
 export const socialLinks: ReadonlyArray<SocialLink> = [
   {
@@ -20,9 +19,9 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
   {
     id: "soc-linkedin",
     platform: "linkedin",
-    username: "balarajmp",
+    username: "balaraj-m-p",
     label: "LinkedIn",
-    url: "https://linkedin.com/in/balarajmp",
+    url: "https://www.linkedin.com/in/balaraj-m-p/",
     isExternal: true,
     isPrimary: true,
     ariaLabel: "View LinkedIn Profile for Balaraj M P",
@@ -31,20 +30,20 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
   {
     id: "soc-leetcode",
     platform: "leetcode",
-    username: "balarajmp",
+    username: "Balaraj_m_p",
     label: "LeetCode",
-    url: "https://leetcode.com/u/balarajmp",
+    url: "https://leetcode.com/u/Balaraj_m_p/",
     isExternal: true,
     isPrimary: false,
-    ariaLabel: "View LeetCode Profile for balarajmp",
+    ariaLabel: "View LeetCode Profile for Balaraj_m_p",
     iconName: "Code2",
   },
   {
     id: "soc-email",
     platform: "email",
-    username: "balarajmp@gmail.com",
+    username: "balarajmp05@gmail.com",
     label: "Email",
-    url: "mailto:balarajmp@gmail.com",
+    url: "mailto:balarajmp05@gmail.com",
     isExternal: true,
     isPrimary: true,
     ariaLabel: "Send an email to Balaraj M P",
@@ -65,7 +64,7 @@ export const codingProfiles: ReadonlyArray<CodingProfile> = [
   {
     id: "cp-leetcode",
     platform: "leetcode",
-    username: "balarajmp",
-    profileUrl: "https://leetcode.com/u/balarajmp",
+    username: "Balaraj_m_p",
+    profileUrl: "https://leetcode.com/u/Balaraj_m_p/",
   },
 ];

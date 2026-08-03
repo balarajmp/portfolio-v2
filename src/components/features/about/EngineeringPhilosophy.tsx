@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Wrench, Layers, Code2, BookOpen,
+  Wrench, Layers, Code2, BookOpen, Server, Cpu,
   type LucideIcon,
 } from "lucide-react";
 import { Card } from "@/components/ui/composite/Card";
@@ -12,7 +12,10 @@ const iconMap: Record<string, LucideIcon> = {
   Layers,
   Code2,
   BookOpen,
+  Server,
+  Cpu,
 };
+
 
 export interface EngineeringPhilosophyProps {
   readonly principles: ReadonlyArray<PhilosophyPrinciple>;

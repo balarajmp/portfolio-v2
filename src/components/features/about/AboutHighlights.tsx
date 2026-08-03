@@ -1,5 +1,5 @@
 import React from "react";
-import { Lightbulb, TrendingUp, GraduationCap, FolderCode, Calendar, Terminal,
+import { Lightbulb, TrendingUp, GraduationCap, FolderCode, Calendar, Terminal, MapPin,
   type LucideIcon } from "lucide-react";
 import { StatCard } from "@/components/ui/composite/StatCard";
 import type { EngHighlight } from "@/types";
@@ -11,7 +11,9 @@ const iconMap: Record<string, LucideIcon> = {
   Calendar,
   Terminal,
   Lightbulb,
+  MapPin,
 };
+
 
 export interface AboutHighlightsProps {
   readonly highlights: ReadonlyArray<EngHighlight>;

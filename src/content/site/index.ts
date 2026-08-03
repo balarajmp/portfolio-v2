@@ -2,8 +2,7 @@ import type { SiteConfig } from "@/types";
 
 /**
  * Global Site Configuration & Candidate Profile Data
- * Contains strictly verified information (Candidate Name: Balaraj M P).
- * All unverified fields are marked with TODOs for candidate input.
+ * Strictly verified information for Balaraj M P.
  */
 export const siteConfig: SiteConfig = {
   siteName: "Balaraj M P — Engineering Portfolio Platform",
@@ -11,30 +10,31 @@ export const siteConfig: SiteConfig = {
   version: "1.0.0",
   author: {
     name: "Balaraj M P",
-    roleTitle: "Software Engineer", // TODO: Fill with real job title
-    secondaryTitle: "Full-Stack Developer", // TODO: Fill with real specialization
-    bio: "Software Engineer specializing in modern web applications, clean system architecture, and product-focused engineering.", // TODO: Fill with candidate's preferred bio
-    location: "India", // TODO: Fill with real city/location
-    email: "balarajmp@gmail.com", // TODO: Fill with real email address
-    availabilityStatus: "open-to-offers", // TODO: Update availability status
+    roleTitle: "Software Engineer",
+    secondaryTitle: "Backend & Full Stack Engineer",
+    bio: "Software Engineer specializing in Backend Development, AI Applications, and Full Stack Engineering.",
+    location: "Bengaluru, Karnataka, India",
+    email: "balarajmp05@gmail.com",
+    availabilityStatus: "open-to-offers",
     avatar: {
-      src: "/avatar.jpg", // TODO: Add candidate photo to public/avatar.jpg
-      alt: "Balaraj M P",
+      src: "/images/profile/balaraj-m-p.jpg",
+      alt: "Balaraj M P — Software Engineer",
       width: 400,
       height: 400,
     },
     resumePdfUrl: "/resume.pdf", // TODO: Add resume PDF to public/resume.pdf
   },
   recruiter: {
-    noticePeriodDays: 30, // TODO: Fill with real notice period
-    relocationPreference: "Open for Remote / Hybrid / Relocation", // TODO: Fill with relocation preferences
+    noticePeriodDays: 0,
+    relocationPreference: "Open for Remote / Hybrid / Relocation",
     preferredRoles: [
       "Software Engineer",
-      "Senior Software Engineer",
-      "Full Stack Developer",
-    ], // TODO: Fill with real target roles
-    primaryResumeUrl: "/resume.pdf", // TODO: Add candidate resume PDF
-    directContactEmail: "balarajmp@gmail.com", // TODO: Fill with candidate email
+      "Backend Engineer",
+      "Full Stack Engineer",
+      "AI Applications Engineer",
+    ],
+    primaryResumeUrl: "/resume.pdf", // TODO: Add resume PDF to public/resume.pdf
+    directContactEmail: "balarajmp05@gmail.com",
   },
   telemetry: {
     enabled: true,
@@ -42,5 +42,5 @@ export const siteConfig: SiteConfig = {
     displayFPS: true,
     displayLatency: true,
   },
-  defaultOgImage: "/og-default.png",
+  defaultOgImage: "/images/og/portfolio-og.png", // TODO: Add custom OG image asset at public/images/og/portfolio-og.png
 };

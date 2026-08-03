@@ -1,36 +1,40 @@
 import type { SEOConfig } from "@/types";
 
 /**
- * Global SEO & Search Graph Metadata Defaults
+ * Global SEO & Search Graph Metadata Defaults for Balaraj M P.
  */
 export const defaultSEO: SEOConfig = {
   defaultMetadata: {
-    title: "Balaraj M P — Engineering Portfolio Platform",
-    description: "Production-grade developer portfolio and system architecture showcase by Balaraj M P. Built with Next.js 14, TypeScript, and modern web engineering standards.",
+    title: "Balaraj M P — Software Engineer",
+    description: "Software Engineer specializing in Backend Development, AI Applications, and Full Stack Engineering. View software architecture, project case studies, and engineering philosophy.",
     keywords: [
       "Balaraj M P",
       "Software Engineer",
-      "TypeScript",
-      "Next.js 14",
+      "Backend Developer",
+      "FastAPI",
+      "Python",
+      "Node.js",
       "React",
-      "Portfolio Platform",
+      "Next.js",
+      "AI Applications",
+      "Bengaluru",
     ],
     canonicalUrl: "https://github.com/balarajmp/portfolio-v2",
-    ogImage: "/og-default.png",
+    ogImage: "/images/og/portfolio-og.png", // TODO: Add custom OG image asset at public/images/og/portfolio-og.png
   },
-  twitterHandle: "@balarajmp", // TODO: Fill with real Twitter handle
+  twitterHandle: "@balarajmp",
   openGraph: {
-    title: "Balaraj M P — Engineering Portfolio Platform",
-    description: "Production-grade portfolio and system architecture showcase by Balaraj M P.",
+    title: "Balaraj M P — Software Engineer",
+    description: "Software Engineer specializing in Backend Development, AI Applications, and Full Stack Engineering.",
     type: "profile",
     url: "https://github.com/balarajmp/portfolio-v2",
     siteName: "Balaraj M P Portfolio",
     images: [
       {
-        url: "/og-default.png",
+        url: "/images/og/portfolio-og.png", // TODO: Add custom OG image asset at public/images/og/portfolio-og.png
         width: 1200,
         height: 630,
-        alt: "Balaraj M P — Engineering Portfolio Platform",
+        alt: "Balaraj M P — Software Engineer Portfolio",
       },
     ],
   },

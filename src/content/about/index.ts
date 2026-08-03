@@ -2,63 +2,67 @@ import type { AboutContent } from "@/types";
 
 /**
  * About Me & Engineering Philosophy Content
- * Strictly derived from verified resume content, project data, and skills content.
- * No invented interests, fictional technologies, or unverified achievements.
+ * Strictly verified narrative for Balaraj M P.
  */
 export const aboutContent: AboutContent = {
   paragraphs: [
-    "I'm a third-year Information Science & Engineering student at CMR Institute of Technology, Bengaluru, building software systems across backend APIs, machine learning pipelines, and full-stack web applications. My work so far covers three production-grade case studies: a real-time LLM security microservice (CognitoShield AI), an IoT crop telemetry platform (Smart Agriculture Portal), and an industrial gas demand forecasting engine (Gaslytics).",
-    "My focus sits at the intersection of backend architecture and data engineering — writing Python and Node.js systems that are correct, observable, and maintainable at scale. I think about software as infrastructure: inputs, transformations, outputs, and the failure modes in between. That lens pushes me toward understanding systems from first principles rather than reaching for the nearest abstraction.",
-    "Outside of coursework, I'm drawn to Linux internals, networking fundamentals, and infrastructure automation. These areas shape how I reason about distributed systems, latency, and resource management — skills I treat as multipliers for every application-level decision I make.",
+    "I am a Software Engineer currently pursuing a Bachelor of Engineering in Information Science and Engineering at CMR Institute of Technology, Bengaluru.",
+    "My journey into software engineering started with curiosity about how applications work behind the scenes. Over time, that curiosity evolved into building complete software systems—from backend APIs and machine learning models to responsive web applications.",
+    "I enjoy designing scalable backend services, building AI-powered applications, and developing full-stack solutions that solve practical problems. Every project I build strengthens my understanding of software architecture, clean coding practices, databases, APIs, and production-ready engineering.",
+    "I believe software engineering is a continuous learning journey, and I actively improve my skills by building projects, solving coding problems, and exploring modern technologies.",
   ],
 
   interests: [
-    "Backend Engineering",
-    "Linux Systems",
-    "Networking",
-    "Infrastructure Engineering",
-    "Automation",
-    "Machine Learning",
-    "Problem Solving",
+    "Build software that solves real problems.",
+    "Write clean, maintainable, scalable code.",
+    "Continuously learn modern technologies.",
+    "Prioritize reliability, performance, and security.",
+    "Build with simplicity before complexity.",
   ],
 
   philosophyPrinciples: [
     {
-      id: "ph-practical",
-      title: "Build practical solutions",
-      description: "Engineering value is measured by what runs reliably in production — not by architectural elegance on a whiteboard. Every decision should solve a real problem.",
+      id: "ph-swe",
+      title: "Why Software Engineering",
+      description: "Software engineering allows me to transform ideas into practical solutions that improve people's lives. I enjoy the complete engineering process—from understanding a problem and designing a solution to implementing, testing, and continuously improving software.",
       iconName: "Wrench",
     },
     {
-      id: "ph-deep",
-      title: "Understand systems deeply",
-      description: "Knowing how the OS schedules processes, how TCP handles retransmission, or how a database chooses an index plan changes every application-level decision you make.",
+      id: "ph-backend",
+      title: "Why Backend",
+      description: "Backend development is where application logic, scalability, security, and performance come together. I enjoy designing REST APIs, managing databases, implementing authentication, optimizing application performance, and building reliable systems.",
+      iconName: "Server",
+    },
+    {
+      id: "ph-ai",
+      title: "Why AI",
+      description: "Artificial Intelligence enables software to make intelligent decisions using data. Through CognitoShield AI and the Smart Agriculture Portal, I explored how machine learning can solve real-world problems.",
+      iconName: "Cpu",
+    },
+    {
+      id: "ph-fullstack",
+      title: "Why Full Stack",
+      description: "Understanding both frontend and backend enables me to build complete software solutions and better understand the interaction between every layer of an application.",
       iconName: "Layers",
     },
     {
-      id: "ph-maintainable",
-      title: "Write maintainable software",
-      description: "Code is read far more than it is written. Consistent naming, small functions, and explicit data contracts reduce the cognitive load for everyone — including future me.",
-      iconName: "Code2",
-    },
-    {
-      id: "ph-learn",
-      title: "Keep learning continuously",
-      description: "The stack changes. Fundamentals don't. Prioritize depth in computer science concepts and treat new frameworks as implementation details of those fundamentals.",
+      id: "ph-motivation",
+      title: "What Motivates Me",
+      description: "My motivation comes from solving challenging problems and continuously learning new technologies. Every project teaches me something valuable and helps me become a better engineer.",
       iconName: "BookOpen",
     },
   ],
 
-  // Derived strictly from verified skills in @/content/skills
   currentFocusTechs: [
-    { id: "cf-python",   name: "Python",     categoryId: "cat-languages" },
-    { id: "cf-fastapi",  name: "FastAPI",    categoryId: "cat-backend" },
-    { id: "cf-react",    name: "React",      categoryId: "cat-frontend" },
-    { id: "cf-nodejs",   name: "Node.js",    categoryId: "cat-backend" },
-    { id: "cf-sql",      name: "SQL",        categoryId: "cat-languages" },
-    { id: "cf-docker",   name: "Docker",     categoryId: "cat-devops" },
-    { id: "cf-git",      name: "Git",        categoryId: "cat-devops" },
-    { id: "cf-ml",       name: "Scikit-Learn", categoryId: "cat-ml" },
+    { id: "cf-backend", name: "Backend Development", categoryId: "cat-backend" },
+    { id: "cf-fastapi", name: "FastAPI", categoryId: "cat-backend" },
+    { id: "cf-nodejs", name: "Node.js", categoryId: "cat-backend" },
+    { id: "cf-react", name: "React", categoryId: "cat-frontend" },
+    { id: "cf-nextjs", name: "Next.js", categoryId: "cat-frontend" },
+    { id: "cf-ml", name: "Machine Learning", categoryId: "cat-ml" },
+    { id: "cf-system-design", name: "System Design", categoryId: "cat-architecture" },
+    { id: "cf-rest-api", name: "REST APIs", categoryId: "cat-backend" },
+    { id: "cf-dsa", name: "Data Structures & Algorithms", categoryId: "cat-cs" },
   ],
 
   roadmapAreas: [
@@ -75,18 +79,6 @@ export const aboutContent: AboutContent = {
       iconName: "Cpu",
     },
     {
-      id: "rm-os",
-      title: "Operating Systems",
-      description: "Coursework and self-study covering process scheduling, memory management, and I/O subsystems.",
-      iconName: "Terminal",
-    },
-    {
-      id: "rm-networks",
-      title: "Computer Networks",
-      description: "Working through TCP/IP fundamentals, routing protocols, and the impact of network topology on application latency.",
-      iconName: "Network",
-    },
-    {
       id: "rm-distributed",
       title: "Distributed Systems",
       description: "Exploring consensus algorithms, replication strategies, and partition tolerance in large-scale systems.",
@@ -94,42 +86,35 @@ export const aboutContent: AboutContent = {
     },
     {
       id: "rm-cloud",
-      title: "Cloud Fundamentals",
-      description: "Understanding compute, storage, and networking primitives in cloud environments to inform deployment and cost decisions.",
+      title: "Cloud & DevOps Primitives",
+      description: "Understanding compute, storage, containerization, and deployment automation for production environments.",
       iconName: "Cloud",
     },
   ],
 
-  // All values sourced directly from verified typed content — no hardcoded fabrications
   highlights: [
     {
       id: "hl-projects",
-      label: "Production case studies",
-      value: "3",
+      label: "Engineered Projects",
+      value: "4",
       iconName: "FolderCode",
     },
     {
       id: "hl-degree",
-      label: "Current degree",
-      value: "B.E. Information Science & Engineering",
+      label: "Current Education",
+      value: "B.E. Information Science & Eng",
       iconName: "GraduationCap",
     },
     {
-      id: "hl-cgpa",
-      label: "Current CGPA",
-      value: "8.68",
-      iconName: "TrendingUp",
-    },
-    {
-      id: "hl-grad",
-      label: "Expected graduation",
-      value: "May 2027",
-      iconName: "Calendar",
+      id: "hl-location",
+      label: "Location",
+      value: "Bengaluru, India",
+      iconName: "MapPin",
     },
     {
       id: "hl-focus",
-      label: "Primary focus",
-      value: "Linux & Backend Engineering",
+      label: "Core Specialization",
+      value: "Backend & AI Engineering",
       iconName: "Terminal",
     },
   ],
