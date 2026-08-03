@@ -33,7 +33,7 @@ export const HeroMetrics: React.FC<HeroMetricsProps> = ({ className = "" }) => {
         <StatCard
           title="Graduation"
           value="May 2027"
-          description="B.E. Computer Science & Eng."
+          description="B.E. Information Science & Eng."
           icon={GraduationCap}
           radius="lg"
           padding="md"
@@ -42,7 +42,7 @@ export const HeroMetrics: React.FC<HeroMetricsProps> = ({ className = "" }) => {
         {/* Metric 3: Academic Score */}
         <StatCard
           title="Academic Score"
-          value="8.6 CGPA"
+          value="8.68 CGPA"
           description="Verified academic performance"
           icon={Award}
           radius="lg"

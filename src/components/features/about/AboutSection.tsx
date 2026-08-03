@@ -31,9 +31,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) =>
       aria-label="About Me and Engineering Philosophy"
       spacing="lg"
       containerSize="default"
-      className={className}
+      background="surface1"
+      className={`border-y border-border-subtle/80 ${className}`}
     >
-      <Stack gap={10} align="stretch">
+      <Stack gap={8} align="stretch">
         {/* ── Section Header ───────────────────────────────── */}
         <div className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">

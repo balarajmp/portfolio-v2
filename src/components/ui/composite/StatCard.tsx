@@ -80,7 +80,7 @@ export const StatCard = React.forwardRef<HTMLDivElement, StatCardProps>(
       if (typeof icon === "function" || (typeof icon === "object" && "render" in icon)) {
         const IconComponent = icon as LucideIcon;
         return (
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-primary shrink-0">
+          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0">
             <IconComponent className="h-4 w-4" />
           </div>
         );

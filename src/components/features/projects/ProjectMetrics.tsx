@@ -40,7 +40,7 @@ export const ProjectMetrics: React.FC<ProjectMetricsProps> = ({
               title={metric.label}
               value={displayValue}
               description={metric.description}
-              radius="md"
+              radius="lg"
               padding="sm"
               className="bg-bg-surface1 border-border-subtle"
             />

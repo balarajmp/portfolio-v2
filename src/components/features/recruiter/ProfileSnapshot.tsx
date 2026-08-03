@@ -37,8 +37,8 @@ export const ProfileSnapshot: React.FC<ProfileSnapshotProps> = ({ className = ""
     },
     {
       id: "snap-cgpa",
-      label: "CGPA Score",
-      value: edu?.gradeOrCgpa || "8.6 CGPA",
+      label: "CGPA",
+      value: edu?.gradeOrCgpa ? `${edu.gradeOrCgpa} ${edu.gradeLabel ?? ""}`.trim() : "8.68 CGPA",
       icon: Award,
     },
     {

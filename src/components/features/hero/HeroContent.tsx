@@ -30,8 +30,8 @@ export const HeroContent: React.FC<HeroContentProps> = ({
       {/* Candidate Name & Title Header */}
       <div className="space-y-2">
         <Typography
-          variant="caption"
-          className="text-accent-hover font-mono uppercase tracking-widest block"
+          variant="small"
+          className="text-accent-hover font-mono uppercase tracking-widest block font-semibold"
         >
           {name}
         </Typography>

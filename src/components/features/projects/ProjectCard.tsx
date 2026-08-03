@@ -30,29 +30,41 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = "
       padding="lg"
       radius="lg"
       outlined
-      className={`space-y-6 bg-bg-surface1/80 hover:border-border-strong transition-all duration-normal ${className}`}
+      className={`bg-bg-surface1/80 hover:border-border-strong transition-all duration-normal ${className}`}
     >
       {/* Header, Problem & Solution */}
       <ProjectHeader project={project} />
 
       {/* Visual System Architecture & Data Flow */}
-      {project.architecture && <ProjectArchitecture architecture={project.architecture} />}
+      {project.architecture && (
+        <div className="border-t border-border-subtle/50 pt-4">
+          <ProjectArchitecture architecture={project.architecture} />
+        </div>
+      )}
 
       {/* Dynamic Technology Stack */}
-      <ProjectTechStack techStack={project.techStack} />
+      <div className="border-t border-border-subtle/50 pt-4">
+        <ProjectTechStack techStack={project.techStack} />
+      </div>
 
       {/* Verified Key Performance Telemetry */}
       {project.keyMetrics && project.keyMetrics.length > 0 && (
-        <ProjectMetrics metrics={project.keyMetrics} />
+        <div className="border-t border-border-subtle/50 pt-4">
+          <ProjectMetrics metrics={project.keyMetrics} />
+        </div>
       )}
 
       {/* Engineering Challenges & Resolutions */}
       {project.challenges && project.challenges.length > 0 && (
-        <ProjectChallenges challenges={project.challenges} />
+        <div className="border-t border-border-subtle/50 pt-4">
+          <ProjectChallenges challenges={project.challenges} />
+        </div>
       )}
 
       {/* Action Bar (GitHub, Live Demo, Case Study) */}
-      <ProjectActions project={project} />
+      <div className="border-t border-border-subtle/50 pt-4">
+        <ProjectActions project={project} />
+      </div>
     </Card>
   );
 };

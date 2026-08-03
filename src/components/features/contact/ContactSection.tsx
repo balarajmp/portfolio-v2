@@ -31,7 +31,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }
       spacing="lg"
       containerSize="default"
       background="surface1"
-      className={`border-t border-border-subtle/80 ${className}`}
+      className={className}
     >
       <Stack gap={8} align="stretch">
         {/* ── Section Header ───────────────────────────────── */}

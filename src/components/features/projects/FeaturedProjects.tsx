@@ -30,7 +30,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ className = 
     >
       <Stack gap={8} align="stretch">
         {/* Section Header */}
-        <div className="space-y-2 border-b border-border-subtle pb-6">
+        <div className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={Code2} className="text-xs font-mono">
               Production Case Studies
@@ -45,7 +45,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ className = 
         </div>
 
         {/* Project Cards List */}
-        <Stack gap={10} align="stretch">
+        <Stack gap={8} align="stretch">
           {projects.map((project) => (
             <ProjectCard key={project.id || project.slug} project={project} />
           ))}
