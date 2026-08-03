@@ -12,3 +12,8 @@ export { ProjectTechStack, type ProjectTechStackProps } from "./ProjectTechStack
 export { ProjectMetrics, type ProjectMetricsProps } from "./ProjectMetrics";
 export { ProjectChallenges, type ProjectChallengesProps } from "./ProjectChallenges";
 export { ProjectActions, type ProjectActionsProps } from "./ProjectActions";
+export { ProjectCaseStudyHero, type ProjectCaseStudyHeroProps } from "./ProjectCaseStudyHero";
+export { ProjectOptimizations, type ProjectOptimizationsProps } from "./ProjectOptimizations";
+export { ProjectGallery, type ProjectGalleryProps } from "./ProjectGallery";
+export { ProjectNav, type ProjectNavProps } from "./ProjectNav";
+
