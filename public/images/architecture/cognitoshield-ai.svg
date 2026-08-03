@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B" />
+      <stop offset="50%" stop-color="#110C24" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#111115" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="card-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E1065" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="card-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#D8B4FE" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#8B5CF6" />
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#C4B5FD" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="760" fill="url(#bg-grad)" />
+  <circle cx="1000" cy="150" r="300" fill="#8B5CF6" fill-opacity="0.04" filter="blur(60px)" />
+  <circle cx="200" cy="600" r="250" fill="#6366F1" fill-opacity="0.03" filter="blur(50px)" />
+
+  <!-- Grid pattern overlay -->
+  <path d="M 0 80 L 1200 80 M 0 160 L 1200 160 M 0 240 L 1200 240 M 0 320 L 1200 320 M 0 400 L 1200 400 M 0 480 L 1200 480 M 0 560 L 1200 560 M 0 640 L 1200 640 M 0 720 L 1200 720" stroke="#27272A" stroke-opacity="0.25" stroke-width="1" />
+
+  <!-- Header Header -->
+  <rect x="50" y="35" width="160" height="26" rx="13" fill="#2E1065" stroke="#8B5CF6" stroke-opacity="0.6" />
+  <text x="130" y="52" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">SECURITY &amp; ML PIPELINE</text>
+  
+  <text x="50" y="90" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">CognitoShield AI — System Architecture</text>
+  <text x="50" y="112" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="14" font-weight="400">Privacy-First Cognitive Load &amp; Burnout Detection Platform</text>
+
+  <!-- Connectors -->
+  <!-- Top Row Links -->
+  <line x1="190" y1="200" x2="250" y2="200" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="430" y1="200" x2="490" y2="200" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="680" y1="200" x2="740" y2="200" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="930" y1="200" x2="990" y2="200" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- Middle Row Connections -->
+  <line x1="865" y1="240" x2="865" y2="300" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="740" y1="340" x2="680" y2="340" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="380" y1="340" x2="320" y2="340" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="200" y1="390" x2="200" y2="450" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- Bottom Row Connections -->
+  <line x1="350" y1="500" x2="440" y2="500" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="710" y1="500" x2="790" y2="500" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+  <line x1="935" y1="550" x2="935" y2="600" stroke="#8B5CF6" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- NODES -->
+  <!-- 1. User -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="160" width="140" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <circle cx="90" cy="200" r="16" fill="#2E1065" stroke="#8B5CF6" />
+    <path d="M 85 195 A 4 4 0 1 1 95 195 A 4 4 0 1 1 85 195 M 80 207 Q 90 200 100 207" fill="none" stroke="#C4B5FD" stroke-width="2" />
+    <text x="120" y="196" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">User</text>
+    <text x="120" y="214" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Client Entry</text>
+  </g>
+
+  <!-- 2. React Frontend -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="160" width="180" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="265" y="182" width="36" height="36" rx="8" fill="#18181B" stroke="#61DAFB" stroke-width="1.5" />
+    <text x="283" y="205" fill="#61DAFB" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">⚛</text>
+    <text x="312" y="194" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">React Frontend</text>
+    <text x="312" y="212" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Next.js 14 Client</text>
+  </g>
+
+  <!-- 3. REST API -->
+  <g filter="url(#shadow)">
+    <rect x="490" y="160" width="190" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="505" y="182" width="36" height="36" rx="8" fill="#27272A" stroke="#8B5CF6" stroke-width="1.5" />
+    <text x="523" y="205" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">API</text>
+    <text x="550" y="194" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">REST API</text>
+    <text x="550" y="212" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">HTTPS &amp; SSE Gateway</text>
+  </g>
+
+  <!-- 4. FastAPI Backend -->
+  <g filter="url(#shadow)">
+    <rect x="740" y="160" width="250" height="80" rx="12" fill="url(#card-violet)" stroke="#8B5CF6" stroke-width="2" />
+    <rect x="755" y="182" width="36" height="36" rx="8" fill="#059669" stroke="#A7F3D0" stroke-width="1.5" />
+    <text x="773" y="205" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">⚡</text>
+    <text x="800" y="194" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">FastAPI Backend</text>
+    <text x="800" y="212" fill="#DDD6FE" font-family="system-ui, sans-serif" font-size="11">Python Async Microservice</text>
+  </g>
+
+  <!-- 5. Authentication -->
+  <g filter="url(#shadow)">
+    <rect x="740" y="300" width="250" height="75" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="755" y="320" width="36" height="36" rx="8" fill="#27272A" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="773" y="343" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">🔒</text>
+    <text x="800" y="334" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Authentication</text>
+    <text x="800" y="352" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">JWT Token Verification</text>
+  </g>
+
+  <!-- 6. Telemetry Collection -->
+  <g filter="url(#shadow)">
+    <rect x="380" y="300" width="300" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <text x="400" y="328" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Telemetry Collection</text>
+    <!-- Subchips -->
+    <rect x="400" y="340" width="50" height="20" rx="4" fill="#27272A" />
+    <text x="425" y="354" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Mouse</text>
+
+    <rect x="456" y="340" width="60" height="20" rx="4" fill="#27272A" />
+    <text x="486" y="354" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Keyboard</text>
+
+    <rect x="522" y="340" width="46" height="20" rx="4" fill="#27272A" />
+    <text x="545" y="354" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Scroll</text>
+
+    <rect x="574" y="340" width="36" height="20" rx="4" fill="#27272A" />
+    <text x="592" y="354" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Idle</text>
+
+    <rect x="616" y="340" width="54" height="20" rx="4" fill="#27272A" />
+    <text x="643" y="354" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Session</text>
+  </g>
+
+  <!-- 7. Feature Engineering -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="300" width="270" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="65" y="325" width="36" height="36" rx="8" fill="#27272A" stroke="#8B5CF6" stroke-width="1.5" />
+    <text x="83" y="348" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">⚙️</text>
+    <text x="112" y="338" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Feature Engineering</text>
+    <text x="112" y="356" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Sliding Window &amp; Normalizer</text>
+  </g>
+
+  <!-- 8. Machine Learning -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="450" width="300" height="100" rx="12" fill="url(#card-violet)" stroke="#8B5CF6" stroke-width="2" />
+    <rect x="65" y="475" width="40" height="40" rx="8" fill="#4C1D95" stroke="#A78BFA" stroke-width="1.5" />
+    <text x="85" y="500" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">🤖</text>
+    <text x="118" y="488" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Machine Learning Engine</text>
+    <rect x="118" y="500" width="80" height="22" rx="4" fill="#2E1065" stroke="#8B5CF6" />
+    <text x="158" y="515" fill="#E9D5FF" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Scikit-Learn</text>
+
+    <rect x="204" y="500" width="65" height="22" rx="4" fill="#2E1065" stroke="#8B5CF6" />
+    <text x="236" y="515" fill="#E9D5FF" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">XGBoost</text>
+  </g>
+
+  <!-- 9. SQLite Database -->
+  <g filter="url(#shadow)">
+    <rect x="440" y="450" width="270" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="455" y="475" width="40" height="40" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="475" y="500" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">🗄️</text>
+    <text x="508" y="488" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">SQLite Database</text>
+    <text x="508" y="510" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Telemetry &amp; Audit Storage</text>
+  </g>
+
+  <!-- 10. Analytics Dashboard -->
+  <g filter="url(#shadow)">
+    <rect x="790" y="450" width="290" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="805" y="475" width="40" height="40" rx="8" fill="#27272A" stroke="#8B5CF6" stroke-width="1.5" />
+    <text x="825" y="500" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">📊</text>
+    <text x="858" y="488" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Analytics Dashboard</text>
+    <text x="858" y="510" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Real-Time Risk Visualization</text>
+  </g>
+
+  <!-- 11. Reports / Outputs -->
+  <g filter="url(#shadow)">
+    <rect x="730" y="600" width="410" height="90" rx="12" fill="url(#card-violet)" stroke="#8B5CF6" stroke-width="2" />
+    <text x="750" y="628" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Cognitive Risk Output Reports</text>
+
+    <rect x="750" y="640" width="110" height="30" rx="6" fill="#18181B" stroke="#EF4444" stroke-width="1" />
+    <text x="805" y="660" fill="#FCA5A5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🔥 Stress Index</text>
+
+    <rect x="870" y="640" width="120" height="30" rx="6" fill="#18181B" stroke="#F59E0B" stroke-width="1" />
+    <text x="930" y="660" fill="#FDE68A" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">⚡ Fatigue Score</text>
+
+    <rect x="1000" y="640" width="120" height="30" rx="6" fill="#18181B" stroke="#10B981" stroke-width="1" />
+    <text x="1060" y="660" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🛡️ Burnout Alerts</text>
+  </g>
+</svg>

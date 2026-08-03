@@ -83,7 +83,7 @@ export const navigation: NavigationConfig = {
       id: "sec-recruiter",
       title: "Recruiter Quick Actions",
       items: [
-        { id: "cmd-resume", label: "Download Resume PDF", url: "/resume.pdf", isPrimaryCTA: true, shortcut: "D R" }, // TODO: Add resume PDF to public/resume.pdf
+        { id: "cmd-resume", label: "Download Resume PDF", url: "/resume.pdf", isPrimaryCTA: true, shortcut: "D R" },
         { id: "cmd-email", label: "Send Direct Email", url: "mailto:balarajmp05@gmail.com", isExternal: true, shortcut: "C E" },
       ],
     },
@@ -91,9 +91,9 @@ export const navigation: NavigationConfig = {
       id: "sec-social",
       title: "Developer Profiles",
       items: [
-        { id: "cmd-github", label: "GitHub Profile", url: "https://github.com/balarajmp", isExternal: true },
+        { id: "cmd-github", label: "GitHub Profile", url: "https://github.com/balaraj_m_p", isExternal: true },
         { id: "cmd-linkedin", label: "LinkedIn Profile", url: "https://www.linkedin.com/in/balaraj-m-p/", isExternal: true },
-        { id: "cmd-leetcode", label: "LeetCode Profile", url: "https://leetcode.com/u/Balaraj_m_p/", isExternal: true },
+        { id: "cmd-leetcode", label: "LeetCode Profile", url: "https://leetcode.com/u/bapacmr/", isExternal: true },
       ],
     },
   ],
@@ -112,7 +112,7 @@ export const navigation: NavigationConfig = {
       id: "ft-recruiter",
       title: "Recruiter Assets",
       items: [
-        { id: "ft-rec-resume", label: "PDF Resume", url: "/resume.pdf" }, // TODO: Add resume PDF to public/resume.pdf
+        { id: "ft-rec-resume", label: "PDF Resume", url: "/resume.pdf" },
         { id: "ft-rec-email", label: "Direct Email", url: "mailto:balarajmp05@gmail.com", isExternal: true },
         { id: "ft-rec-status", label: "Availability Status", url: "/#contact" },
       ],

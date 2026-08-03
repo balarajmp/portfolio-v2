@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B" />
+      <stop offset="50%" stop-color="#1C1309" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#111115" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="card-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C2D12" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#431407" stop-opacity="0.85" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#F97316" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg-grad)" />
+  <circle cx="1000" cy="150" r="300" fill="#F97316" fill-opacity="0.04" filter="blur(60px)" />
+  
+  <!-- Header -->
+  <rect x="50" y="35" width="200" height="26" rx="13" fill="#7C2D12" stroke="#F97316" stroke-opacity="0.6" />
+  <text x="150" y="52" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">LOGISTICS &amp; BACKEND PIPELINE</text>
+  
+  <text x="50" y="90" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">Gaslytics — System Architecture</text>
+  <text x="50" y="112" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="14" font-weight="400">Smart LPG Logistics &amp; Distribution System</text>
+
+  <!-- Connectors -->
+  <line x1="210" y1="200" x2="270" y2="200" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+  <line x1="470" y1="200" x2="530" y2="200" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+  <line x1="730" y1="200" x2="790" y2="200" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+  <line x1="920" y1="250" x2="920" y2="310" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+
+  <!-- Middle Link to Modules -->
+  <line x1="680" y1="360" x2="600" y2="360" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+  <line x1="330" y1="430" x2="330" y2="490" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+  <line x1="560" y1="540" x2="680" y2="540" stroke="#F97316" stroke-width="2.5" marker-end="url(#arrow-orange)" />
+
+  <!-- NODES -->
+  <!-- 1. Customer -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="150" width="160" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <circle cx="90" cy="195" r="16" fill="#7C2D12" stroke="#F97316" />
+    <text x="90" y="200" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">🏢</text>
+    <text x="120" y="190" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Customer</text>
+    <text x="120" y="208" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Business Client</text>
+  </g>
+
+  <!-- 2. Booking Portal -->
+  <g filter="url(#shadow)">
+    <rect x="270" y="150" width="200" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="285" y="177" width="36" height="36" rx="8" fill="#18181B" stroke="#F97316" stroke-width="1.5" />
+    <text x="303" y="200" fill="#F97316" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">📦</text>
+    <text x="332" y="190" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Booking Portal</text>
+    <text x="332" y="208" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Client Web Portal</text>
+  </g>
+
+  <!-- 3. Node.js -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="150" width="200" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="545" y="177" width="36" height="36" rx="8" fill="#14532D" stroke="#22C55E" stroke-width="1.5" />
+    <text x="563" y="200" fill="#86EFAC" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">⬢</text>
+    <text x="592" y="190" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Node.js</text>
+    <text x="592" y="208" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Async Runtime Engine</text>
+  </g>
+
+  <!-- 4. Express.js -->
+  <g filter="url(#shadow)">
+    <rect x="790" y="150" width="260" height="90" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="805" y="177" width="36" height="36" rx="8" fill="#27272A" stroke="#FAFAFA" stroke-width="1.5" />
+    <text x="823" y="200" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">ex</text>
+    <text x="852" y="190" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Express.js Framework</text>
+    <text x="852" y="208" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">RESTful Router &amp; Middleware</text>
+  </g>
+
+  <!-- 5. Business Logic -->
+  <g filter="url(#shadow)">
+    <rect x="680" y="310" width="480" height="110" rx="12" fill="url(#card-orange)" stroke="#F97316" stroke-width="2" />
+    <text x="700" y="340" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Core Business Logic Layer</text>
+    <text x="700" y="360" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="12">Order Dispatching, Dispatch Scheduling, Route Optimization &amp; Volumetric Calculation</text>
+
+    <rect x="700" y="375" width="130" height="28" rx="4" fill="#431407" stroke="#F97316" />
+    <text x="765" y="393" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Order Dispatch</text>
+
+    <rect x="840" y="375" width="140" height="28" rx="4" fill="#431407" stroke="#F97316" />
+    <text x="910" y="393" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Route Planner</text>
+
+    <rect x="990" y="375" width="150" height="28" rx="4" fill="#431407" stroke="#F97316" />
+    <text x="1065" y="393" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Demand Forecasting</text>
+  </g>
+
+  <!-- 6. Operational Modules -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="310" width="550" height="120" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <text x="70" y="340" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Operational Subsystems</text>
+
+    <rect x="70" y="360" width="115" height="32" rx="6" fill="#27272A" stroke="#F97316" />
+    <text x="127" y="381" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">📦 Inventory</text>
+
+    <rect x="195" y="360" width="95" height="32" rx="6" fill="#27272A" stroke="#F97316" />
+    <text x="242" y="381" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">💳 Billing</text>
+
+    <rect x="300" y="360" width="105" height="32" rx="6" fill="#27272A" stroke="#F97316" />
+    <text x="352" y="381" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🚚 Delivery</text>
+
+    <rect x="415" y="360" width="165" height="32" rx="6" fill="#27272A" stroke="#F97316" />
+    <text x="497" y="381" fill="#FFEDD5" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">📊 Telemetry Reports</text>
+  </g>
+
+  <!-- 7. SQLite Database -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="490" width="440" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="135" y="515" width="40" height="40" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="155" y="540" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">🗄️</text>
+    <text x="188" y="528" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">SQLite Relational Database</text>
+    <text x="188" y="550" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Transactional Storage &amp; Audit Log Persistence</text>
+  </g>
+</svg>

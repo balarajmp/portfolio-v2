@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B" />
+      <stop offset="50%" stop-color="#091E16" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#111115" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="card-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.85" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10B981" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg-grad)" />
+  <circle cx="1000" cy="150" r="300" fill="#10B981" fill-opacity="0.04" filter="blur(60px)" />
+  
+  <!-- Header -->
+  <rect x="50" y="35" width="180" height="26" rx="13" fill="#064E3B" stroke="#10B981" stroke-opacity="0.6" />
+  <text x="140" y="52" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">AGRITECH &amp; ML PIPELINE</text>
+  
+  <text x="50" y="90" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">Smart Agriculture Portal — System Architecture</text>
+  <text x="50" y="112" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="14" font-weight="400">AI-Based Crop Prediction &amp; Yield Optimization Platform</text>
+
+  <!-- Connectors Top -->
+  <line x1="190" y1="200" x2="250" y2="200" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+  <line x1="440" y1="200" x2="500" y2="200" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+  <line x1="690" y1="200" x2="750" y2="200" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+  <line x1="910" y1="270" x2="910" y2="330" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+
+  <!-- Middle Row Back Connection -->
+  <line x1="750" y1="380" x2="690" y2="380" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+  <line x1="330" y1="440" x2="330" y2="500" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+  <line x1="510" y1="550" x2="630" y2="550" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)" />
+
+  <!-- NODES -->
+  <!-- 1. Farmer -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="160" width="140" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <circle cx="90" cy="200" r="16" fill="#064E3B" stroke="#10B981" />
+    <text x="90" y="205" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">🧑‍🌾</text>
+    <text x="120" y="196" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Farmer</text>
+    <text x="120" y="214" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">User Persona</text>
+  </g>
+
+  <!-- 2. Web Application -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="160" width="190" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="265" y="182" width="36" height="36" rx="8" fill="#18181B" stroke="#61DAFB" stroke-width="1.5" />
+    <text x="283" y="205" fill="#61DAFB" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">🌐</text>
+    <text x="312" y="194" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Web Application</text>
+    <text x="312" y="212" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">React SPA Portal</text>
+  </g>
+
+  <!-- 3. Python Backend -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="160" width="190" height="80" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="515" y="182" width="36" height="36" rx="8" fill="#1E3A8A" stroke="#60A5FA" stroke-width="1.5" />
+    <text x="533" y="205" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">🐍</text>
+    <text x="560" y="194" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Python Backend</text>
+    <text x="560" y="212" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">REST API Server</text>
+  </g>
+
+  <!-- 4. ML Models -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="140" width="320" height="130" rx="12" fill="url(#card-green)" stroke="#10B981" stroke-width="2" />
+    <text x="770" y="170" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Machine Learning Models</text>
+    
+    <rect x="770" y="185" width="115" height="26" rx="4" fill="#022C22" stroke="#10B981" />
+    <text x="827" y="202" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Decision Tree</text>
+
+    <rect x="895" y="185" width="125" height="26" rx="4" fill="#022C22" stroke="#10B981" />
+    <text x="957" y="202" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Random Forest</text>
+
+    <rect x="770" y="220" width="70" height="26" rx="4" fill="#022C22" stroke="#10B981" />
+    <text x="805" y="237" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">KNN</text>
+
+    <rect x="850" y="220" width="170" height="26" rx="4" fill="#022C22" stroke="#10B981" />
+    <text x="935" y="237" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Scikit-Learn Pipeline</text>
+  </g>
+
+  <!-- 5. Prediction Engine -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="330" width="320" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="765" y="355" width="40" height="40" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />
+    <text x="785" y="380" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">⚡</text>
+    <text x="818" y="368" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Prediction Engine</text>
+    <text x="818" y="390" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Real-Time Soil &amp; Climate Scoring</text>
+  </g>
+
+  <!-- 6. Outputs / Recommendations -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="320" width="640" height="120" rx="12" fill="url(#card-green)" stroke="#10B981" stroke-width="2" />
+    <text x="70" y="350" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Agronomy Decision Intelligence</text>
+
+    <rect x="70" y="368" width="165" height="32" rx="6" fill="#022C22" stroke="#10B981" />
+    <text x="152" y="389" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🌱 Crop Recommendation</text>
+
+    <rect x="245" y="368" width="145" height="32" rx="6" fill="#022C22" stroke="#10B981" />
+    <text x="317" y="389" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">📈 Yield Prediction</text>
+
+    <rect x="400" y="368" width="175" height="32" rx="6" fill="#022C22" stroke="#10B981" />
+    <text x="487" y="389" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">🧪 Fertilizer Optimization</text>
+
+    <rect x="583" y="368" width="95" height="32" rx="6" fill="#022C22" stroke="#10B981" />
+    <text x="630" y="389" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">⛅ Weather</text>
+  </g>
+
+  <!-- 7. MySQL Database -->
+  <g filter="url(#shadow)">
+    <rect x="150" y="500" width="360" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="165" y="525" width="40" height="40" rx="8" fill="#1E3A8A" stroke="#60A5FA" stroke-width="1.5" />
+    <text x="185" y="550" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">🐬</text>
+    <text x="218" y="538" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">MySQL Database</text>
+    <text x="218" y="560" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Relational Soil &amp; Telemetry Storage</text>
+  </g>
+
+  <!-- 8. Admin Dashboard -->
+  <g filter="url(#shadow)">
+    <rect x="630" y="500" width="440" height="100" rx="12" fill="url(#card-grad)" stroke="#3F3F46" stroke-width="1.5" />
+    <rect x="645" y="525" width="40" height="40" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />
+    <text x="665" y="550" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">📊</text>
+    <text x="698" y="538" fill="#FAFAFA" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Admin Dashboard</text>
+    <text x="698" y="560" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="11">Farm Analytics &amp; Agronomy Management</text>
+  </g>
+</svg>

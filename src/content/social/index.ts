@@ -8,12 +8,12 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
   {
     id: "soc-github",
     platform: "github",
-    username: "balarajmp",
+    username: "balaraj_m_p",
     label: "GitHub",
-    url: "https://github.com/balarajmp",
+    url: "https://github.com/balaraj_m_p",
     isExternal: true,
     isPrimary: true,
-    ariaLabel: "View GitHub Profile for balarajmp",
+    ariaLabel: "View GitHub Profile for balaraj_m_p",
     iconName: "Github",
   },
   {
@@ -30,12 +30,12 @@ export const socialLinks: ReadonlyArray<SocialLink> = [
   {
     id: "soc-leetcode",
     platform: "leetcode",
-    username: "Balaraj_m_p",
+    username: "bapacmr",
     label: "LeetCode",
-    url: "https://leetcode.com/u/Balaraj_m_p/",
+    url: "https://leetcode.com/u/bapacmr/",
     isExternal: true,
     isPrimary: false,
-    ariaLabel: "View LeetCode Profile for Balaraj_m_p",
+    ariaLabel: "View LeetCode Profile for bapacmr",
     iconName: "Code2",
   },
   {
@@ -58,13 +58,13 @@ export const codingProfiles: ReadonlyArray<CodingProfile> = [
   {
     id: "cp-github",
     platform: "github",
-    username: "balarajmp",
-    profileUrl: "https://github.com/balarajmp",
+    username: "balaraj_m_p",
+    profileUrl: "https://github.com/balaraj_m_p",
   },
   {
     id: "cp-leetcode",
     platform: "leetcode",
-    username: "Balaraj_m_p",
-    profileUrl: "https://leetcode.com/u/Balaraj_m_p/",
+    username: "bapacmr",
+    profileUrl: "https://leetcode.com/u/bapacmr/",
   },
 ];
