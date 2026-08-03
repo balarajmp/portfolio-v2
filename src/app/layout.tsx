@@ -1,5 +1,7 @@
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { constructMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import "@/styles/globals.css";
 
 const fontSans = Inter({
@@ -14,14 +16,7 @@ const fontMono = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Engineering Portfolio Platform",
-    template: "%s | Engineering Portfolio Platform",
-  },
-  description:
-    "Production-grade Engineering Portfolio Platform built with Next.js, TypeScript, and modern web technologies.",
-};
+export const metadata = constructMetadata();
 
 export const viewport: Viewport = {
   themeColor: "#09090b",
@@ -29,13 +24,14 @@ export const viewport: Viewport = {
 };
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${fontSans.variable} ${fontMono.variable} dark`}>
       <body className="min-h-screen bg-background font-sans antialiased">
+        <JsonLd />
         {children}
       </body>
     </html>
