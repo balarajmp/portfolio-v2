@@ -12,6 +12,7 @@ import { navigation } from "@/content/navigation";
 import { NavigationItem } from "./NavigationItem";
 import { ResumeButton } from "./ResumeButton";
 import { SocialLinks } from "./SocialLinks";
+import { CommandTrigger } from "@/components/features/command";
 import { cn } from "@/lib/utils";
 
 export interface DesktopNavigationProps
@@ -76,7 +77,8 @@ export const DesktopNavigation = React.forwardRef<
       </div>
 
       {/* Action triggers */}
-      <div className="flex items-center gap-4 pl-4 border-l border-border-subtle">
+      <div className="flex items-center gap-3 pl-4 border-l border-border-subtle">
+        <CommandTrigger />
         {showSocial && <SocialLinks size="sm" />}
         {showResume && <ResumeButton size="sm" />}
       </div>
