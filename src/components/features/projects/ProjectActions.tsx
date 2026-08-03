@@ -24,7 +24,7 @@ export const ProjectActions: React.FC<ProjectActionsProps> = ({ project, classNa
   const caseStudyUrl = `/projects/${project.slug}`;
 
   return (
-    <div className={`flex flex-wrap items-center gap-3 pt-2 border-t border-border-subtle ${className}`}>
+    <div className={`flex flex-wrap items-center gap-3 ${className}`}>
       {/* GitHub Repository CTA */}
       {githubUrl && (
         <Button variant="outline" size="sm" asChild>

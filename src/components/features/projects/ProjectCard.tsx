@@ -30,7 +30,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = "
       padding="lg"
       radius="lg"
       outlined
-      className={`bg-bg-surface1/80 hover:border-border-strong transition-all duration-normal ${className}`}
+      className={`bg-bg-surface1/80 hover:border-accent-primary/40 hover:shadow-lg hover:shadow-accent-glow/10 hover:-translate-y-0.5 transition-all duration-normal motion-reduce:transform-none ${className}`}
     >
       {/* Header, Problem & Solution */}
       <ProjectHeader project={project} />

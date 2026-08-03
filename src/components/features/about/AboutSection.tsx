@@ -5,6 +5,7 @@ import { Stack } from "@/components/ui/layout/Stack";
 import { Typography } from "@/components/ui/Typography";
 import { Badge } from "@/components/ui/Badge";
 import { Divider } from "@/components/ui/layout/Divider";
+import { FadeIn } from "@/components/ui/composite";
 import { AboutHighlights } from "./AboutHighlights";
 import { EngineeringPhilosophy } from "./EngineeringPhilosophy";
 import { CurrentFocus } from "./CurrentFocus";
@@ -36,7 +37,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) =>
     >
       <Stack gap={8} align="stretch">
         {/* ── Section Header ───────────────────────────────── */}
-        <div className="space-y-2 border-b border-border-subtle pb-4">
+        <FadeIn direction="up" className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={UserRound} className="text-xs font-mono">
               Engineering Mindset
@@ -45,40 +46,46 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) =>
           <Typography variant="h2" as="h2" className="text-fg-primary font-bold tracking-tight">
             About & Engineering Philosophy
           </Typography>
-        </div>
+        </FadeIn>
 
         {/* ── Highlights Bar ──────────────────────────────── */}
-        <AboutHighlights highlights={aboutContent.highlights} />
+        <FadeIn direction="up" delay={0.1}>
+          <AboutHighlights highlights={aboutContent.highlights} />
+        </FadeIn>
 
         <Divider />
 
         {/* ── Two-column: Bio (left) + Interests + Focus (right) ── */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
           {/* Bio Paragraphs — 3 columns wide */}
-          <div className="lg:col-span-3 space-y-4">
+          <FadeIn direction="up" delay={0.15} className="lg:col-span-3 space-y-4">
             {aboutContent.paragraphs.map((para, idx) => (
               <Typography key={idx} variant="body" className="text-fg-secondary leading-relaxed">
                 {para}
               </Typography>
             ))}
-          </div>
+          </FadeIn>
 
           {/* Interests + Current Focus — 2 columns wide */}
-          <div className="lg:col-span-2 space-y-6">
+          <FadeIn direction="up" delay={0.2} className="lg:col-span-2 space-y-6">
             <CoreValues interests={aboutContent.interests} />
             <CurrentFocus techs={aboutContent.currentFocusTechs} />
-          </div>
+          </FadeIn>
         </div>
 
         <Divider />
 
         {/* ── Engineering Philosophy ──────────────────────── */}
-        <EngineeringPhilosophy principles={aboutContent.philosophyPrinciples} />
+        <FadeIn direction="up" delay={0.1}>
+          <EngineeringPhilosophy principles={aboutContent.philosophyPrinciples} />
+        </FadeIn>
 
         <Divider />
 
         {/* ── Learning Roadmap ────────────────────────────── */}
-        <LearningRoadmap areas={aboutContent.roadmapAreas} />
+        <FadeIn direction="up" delay={0.1}>
+          <LearningRoadmap areas={aboutContent.roadmapAreas} />
+        </FadeIn>
       </Stack>
     </Section>
   );

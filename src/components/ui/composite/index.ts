@@ -43,3 +43,6 @@ export {
 } from "./EmptyState";
 
 export { CodeBlock, type CodeBlockProps } from "./CodeBlock";
+
+export { FadeIn, type FadeInProps } from "./FadeIn";
+

@@ -27,11 +27,11 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({
       padding="md"
       radius="lg"
       outlined
-      className={`flex items-start justify-between gap-3 bg-bg-surface1/70 hover:border-border-strong transition-all duration-normal ${className}`}
+      className={`group flex flex-wrap items-start justify-between gap-3 bg-bg-surface1/70 hover:border-accent-primary/40 hover:-translate-y-0.5 hover:shadow-subtle transition-all duration-normal motion-reduce:transform-none ${className}`}
     >
       <div className="flex items-start gap-3 min-w-0">
         {/* Icon Orb */}
-        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0">
+        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0 group-hover:border-accent-primary/50 group-hover:bg-accent-subtle/40 transition-colors duration-normal">
           <Award className="h-4 w-4" aria-hidden="true" />
         </div>
 

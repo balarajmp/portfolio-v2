@@ -43,7 +43,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({ milestone, className =
       padding="md"
       radius="lg"
       outlined
-      className={`space-y-4 bg-bg-surface1/80 hover:border-border-strong transition-all duration-normal ${className}`}
+      className={`space-y-4 bg-bg-surface1/80 hover:border-accent-primary/40 hover:-translate-y-0.5 hover:shadow-subtle transition-all duration-normal motion-reduce:transform-none ${className}`}
     >
       {/* Date & Category Header */}
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border-subtle/50 pb-2">

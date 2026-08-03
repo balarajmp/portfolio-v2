@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/layout/Section";
 import { Stack } from "@/components/ui/layout/Stack";
 import { Typography } from "@/components/ui/Typography";
 import { Badge } from "@/components/ui/Badge";
+import { FadeIn } from "@/components/ui/composite";
 import { JourneySummary } from "./JourneySummary";
 import { JourneyTimeline } from "./JourneyTimeline";
 
@@ -30,7 +31,7 @@ export const EngineeringJourney: React.FC<EngineeringJourneyProps> = ({ classNam
     >
       <Stack gap={8} align="stretch">
         {/* Section Header */}
-        <div className="space-y-2 border-b border-border-subtle pb-4">
+        <FadeIn direction="up" className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={GitCommit} className="text-xs font-mono">
               Growth Trajectory
@@ -42,10 +43,12 @@ export const EngineeringJourney: React.FC<EngineeringJourneyProps> = ({ classNam
           <Typography variant="lead" className="text-fg-secondary max-w-3xl">
             Chronological story of candidate learning progression, key computer science milestones, and project breakthroughs.
           </Typography>
-        </div>
+        </FadeIn>
 
         {/* Narrative Summary Callout */}
-        <JourneySummary />
+        <FadeIn direction="up" delay={0.1}>
+          <JourneySummary />
+        </FadeIn>
 
         {/* Vertical Timeline Axis */}
         <JourneyTimeline />

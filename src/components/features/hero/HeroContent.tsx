@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@/components/ui";
+import { FadeIn } from "@/components/ui/composite";
 import { siteConfig } from "@/content/site";
 
 export interface HeroContentProps {
@@ -26,7 +27,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`space-y-4 max-w-3xl ${className}`}>
+    <FadeIn direction="up" className={`space-y-4 max-w-3xl ${className}`}>
       {/* Candidate Name & Title Header */}
       <div className="space-y-2">
         <Typography
@@ -44,6 +45,6 @@ export const HeroContent: React.FC<HeroContentProps> = ({
       <Typography variant="lead" className="text-fg-secondary text-balance max-w-2xl">
         {valueProp}
       </Typography>
-    </div>
+    </FadeIn>
   );
 };

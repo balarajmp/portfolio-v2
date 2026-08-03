@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Github, Linkedin, FileText, Mail } from "lucide-react";
 import { Button } from "@/components/ui/Button";
@@ -28,11 +26,11 @@ export const QuickActions: React.FC<QuickActionsProps> = ({ className = "" }) =>
   return (
     <div className={`flex flex-wrap gap-3 ${className}`}>
       {/* Copy Email — client interactive */}
-      <CopyEmailButton variant="primary" size="md" />
+      <CopyEmailButton variant="primary" size="md" className="w-full sm:w-auto" />
 
       {/* Download Resume */}
       {resumeUrl && (
-        <Button variant="outline" size="md" asChild>
+        <Button variant="outline" size="md" className="w-full sm:w-auto" asChild>
           <a
             href={resumeUrl}
             download
@@ -46,7 +44,7 @@ export const QuickActions: React.FC<QuickActionsProps> = ({ className = "" }) =>
 
       {/* Open GitHub */}
       {github && (
-        <Button variant="ghost" size="md" asChild>
+        <Button variant="ghost" size="md" className="w-full sm:w-auto" asChild>
           <a
             href={github.url}
             target="_blank"
@@ -61,7 +59,7 @@ export const QuickActions: React.FC<QuickActionsProps> = ({ className = "" }) =>
 
       {/* Open LinkedIn */}
       {linkedin && (
-        <Button variant="ghost" size="md" asChild>
+        <Button variant="ghost" size="md" className="w-full sm:w-auto" asChild>
           <a
             href={linkedin.url}
             target="_blank"
@@ -75,7 +73,7 @@ export const QuickActions: React.FC<QuickActionsProps> = ({ className = "" }) =>
       )}
 
       {/* Direct email link */}
-      <Button variant="ghost" size="md" asChild>
+      <Button variant="ghost" size="md" className="w-full sm:w-auto" asChild>
         <a
           href={`mailto:${siteConfig.author.email}`}
           aria-label={`Send email to ${siteConfig.author.email}`}

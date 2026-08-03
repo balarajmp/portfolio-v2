@@ -6,6 +6,7 @@ import { Section } from "@/components/ui/layout/Section";
 import { Stack } from "@/components/ui/layout/Stack";
 import { Typography } from "@/components/ui/Typography";
 import { Badge } from "@/components/ui/Badge";
+import { FadeIn } from "@/components/ui/composite";
 import { SkillCategory } from "./SkillCategory";
 import { SkillFilter } from "./SkillFilter";
 import { SkillLegend } from "./SkillLegend";
@@ -48,7 +49,7 @@ export const SkillsMatrix: React.FC<SkillsMatrixProps> = ({ className = "" }) =>
     >
       <Stack gap={8} align="stretch">
         {/* Section Header */}
-        <div className="space-y-2 border-b border-border-subtle pb-4">
+        <FadeIn direction="up" className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={Cpu} className="text-xs font-mono">
               Engineering Matrix
@@ -60,22 +61,28 @@ export const SkillsMatrix: React.FC<SkillsMatrixProps> = ({ className = "" }) =>
           <Typography variant="lead" className="text-fg-secondary max-w-3xl">
             Categorized technical stack supported by verified evidence from production software projects.
           </Typography>
-        </div>
+        </FadeIn>
 
         {/* Evidence Methodology Legend */}
-        <SkillLegend />
+        <FadeIn direction="up" delay={0.1}>
+          <SkillLegend />
+        </FadeIn>
 
         {/* Category Filter Bar */}
-        <SkillFilter
-          categories={filterCategories}
-          selectedCategoryId={selectedCategoryId}
-          onSelectCategory={setSelectedCategoryId}
-        />
+        <FadeIn direction="up" delay={0.15}>
+          <SkillFilter
+            categories={filterCategories}
+            selectedCategoryId={selectedCategoryId}
+            onSelectCategory={setSelectedCategoryId}
+          />
+        </FadeIn>
 
         {/* Categorized Skills Grid List */}
         <Stack gap={8} align="stretch">
-          {displayedCategories.map((category) => (
-            <SkillCategory key={category.id} category={category} />
+          {displayedCategories.map((category, idx) => (
+            <FadeIn key={category.id} direction="up" delay={idx * 0.1}>
+              <SkillCategory category={category} />
+            </FadeIn>
           ))}
         </Stack>
       </Stack>

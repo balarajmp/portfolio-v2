@@ -10,7 +10,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const cardVariants = cva(
-  "relative transition-all duration-normal ease-standard text-fg-primary overflow-hidden",
+  "relative transition-all duration-normal ease-standard text-fg-primary overflow-hidden group",
   {
     variants: {
       padding: {
@@ -113,7 +113,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
             ? "bg-bg-glass backdrop-blur-md border border-border-glass shadow-glass"
             : outlined && "border border-border-subtle shadow-subtle",
           interactive &&
-            "cursor-pointer hover:bg-bg-surfaceHover hover:border-border-strong hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas",
+            "cursor-pointer hover:bg-bg-surfaceHover hover:border-border-strong hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas motion-reduce:transform-none motion-reduce:transition-none",
           className
         )}
         tabIndex={interactive ? (props.tabIndex ?? 0) : props.tabIndex}

@@ -63,13 +63,13 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skill, className = "" }) =
       padding="md"
       radius="lg"
       outlined
-      className={`flex flex-col justify-between space-y-3 bg-bg-surface1/70 hover:border-border-strong hover:bg-bg-surface2/60 transition-all duration-normal ${className}`}
+      className={`group flex flex-col justify-between space-y-3 bg-bg-surface1/70 hover:border-accent-primary/40 hover:bg-bg-surface2/60 hover:-translate-y-0.5 hover:shadow-subtle transition-all duration-normal motion-reduce:transform-none ${className}`}
     >
       <div className="space-y-2">
         {/* Header Bar */}
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0 group-hover:border-accent-primary/50 group-hover:bg-accent-subtle/40 transition-colors duration-normal">
               <IconComponent className="h-4 w-4" aria-hidden="true" />
             </div>
             <Typography variant="h4" as="h3" className="font-semibold text-fg-primary text-base">

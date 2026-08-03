@@ -40,14 +40,14 @@ export const SocialGrid: React.FC<SocialGridProps> = ({ className = "" }) => {
               target={link.isExternal ? "_blank" : undefined}
               rel={link.isExternal ? "noopener noreferrer" : undefined}
               aria-label={link.ariaLabel ?? `Visit ${link.label} profile`}
-              className="flex items-center justify-between gap-3 p-4 rounded-lg bg-bg-surface1/70 border border-border-subtle hover:border-accent-primary/60 hover:bg-bg-surface2/60 transition-all duration-normal group"
+              className="flex items-center justify-between gap-3 p-4 rounded-lg bg-bg-surface1/70 border border-border-subtle hover:border-accent-primary/60 hover:bg-bg-surface2/60 hover:-translate-y-0.5 hover:shadow-subtle focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas transition-all duration-normal motion-reduce:transform-none group"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0 group-hover:border-accent-primary/40 transition-colors duration-normal">
-                  <IconComp className="h-4 w-4" aria-hidden="true" />
+                <div className="flex h-9 w-9 items-center justify-center rounded-md bg-bg-surface2 border border-border-subtle text-accent-hover shrink-0 group-hover:border-accent-primary/40 group-hover:bg-accent-subtle/40 transition-colors duration-normal">
+                  <IconComp className="h-4 w-4 transition-transform duration-fast group-hover:scale-110 motion-reduce:transform-none" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-fg-primary">{link.label}</p>
+                  <p className="text-sm font-semibold text-fg-primary group-hover:text-accent-hover transition-colors duration-fast">{link.label}</p>
                   <p className="text-xs text-fg-muted font-mono">
                     {link.platform === "email" ? link.username : `@${link.username}`}
                   </p>
@@ -58,7 +58,7 @@ export const SocialGrid: React.FC<SocialGridProps> = ({ className = "" }) => {
                 {link.isPrimary && (
                   <Badge variant="accent" className="text-[10px] font-mono">Primary</Badge>
                 )}
-                <ExternalLink className="h-3.5 w-3.5 text-fg-muted group-hover:text-accent-hover transition-colors duration-normal" aria-hidden="true" />
+                <ExternalLink className="h-3.5 w-3.5 text-fg-muted group-hover:text-accent-hover transition-transform duration-fast group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" aria-hidden="true" />
               </div>
             </a>
           );

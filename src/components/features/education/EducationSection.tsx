@@ -5,6 +5,7 @@ import { Stack } from "@/components/ui/layout/Stack";
 import { Grid } from "@/components/ui/layout/Grid";
 import { Typography } from "@/components/ui/Typography";
 import { Badge } from "@/components/ui/Badge";
+import { FadeIn } from "@/components/ui/composite";
 import { EducationTimeline } from "./EducationTimeline";
 import { CertificationList } from "./CertificationList";
 import { HackathonList } from "./HackathonList";
@@ -34,7 +35,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ className = 
     >
       <Stack gap={8} align="stretch">
         {/* Section Header */}
-        <div className="space-y-2 border-b border-border-subtle pb-4">
+        <FadeIn direction="up" className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={BookMarked} className="text-xs font-mono">
               Academic Background
@@ -46,24 +47,26 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ className = 
           <Typography variant="lead" className="text-fg-secondary max-w-3xl">
             Formal academic qualifications, industry certifications, competitive programming events, and industry seminars — documenting continuous technical development.
           </Typography>
-        </div>
+        </FadeIn>
 
         {/* Two-column layout on md+: Timeline (left) / Credentials (right) */}
         <Grid cols={2} gap={8} className="grid-cols-1 lg:grid-cols-2 items-start">
           {/* Left: Academic Timeline */}
-          <div className="space-y-4">
+          <FadeIn direction="up" delay={0.1} className="space-y-4">
             <Typography variant="h3" as="h3" className="font-bold text-fg-primary text-xl border-b border-border-subtle pb-2">
               Academic History
             </Typography>
             <EducationTimeline />
-          </div>
+          </FadeIn>
 
           {/* Right: Certifications + Hackathons + Seminars */}
-          <Stack gap={8} align="stretch">
-            <CertificationList />
-            <HackathonList />
-            <SeminarList />
-          </Stack>
+          <FadeIn direction="up" delay={0.2}>
+            <Stack gap={8} align="stretch">
+              <CertificationList />
+              <HackathonList />
+              <SeminarList />
+            </Stack>
+          </FadeIn>
         </Grid>
       </Stack>
     </Section>

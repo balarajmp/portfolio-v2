@@ -1,4 +1,5 @@
 import React from "react";
+import { FadeIn } from "@/components/ui/composite";
 import { JourneyMilestone } from "./JourneyMilestone";
 import { journeyMilestones } from "@/content/journey";
 
@@ -17,8 +18,10 @@ export interface JourneyTimelineProps {
 export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({ className = "" }) => {
   return (
     <div className={`relative border-l-2 border-border-subtle ml-4 space-y-8 py-2 ${className}`}>
-      {journeyMilestones.map((milestone) => (
-        <JourneyMilestone key={milestone.id} milestone={milestone} />
+      {journeyMilestones.map((milestone, idx) => (
+        <FadeIn key={milestone.id} direction="up" delay={idx * 0.1}>
+          <JourneyMilestone milestone={milestone} />
+        </FadeIn>
       ))}
     </div>
   );

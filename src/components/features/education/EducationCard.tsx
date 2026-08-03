@@ -31,7 +31,7 @@ export const EducationCard: React.FC<EducationCardProps> = ({ record, className 
       padding="md"
       radius="lg"
       outlined
-      className={`space-y-4 bg-bg-surface1/80 hover:border-border-strong transition-all duration-normal ${className}`}
+      className={`space-y-4 bg-bg-surface1/80 hover:border-accent-primary/40 hover:-translate-y-0.5 hover:shadow-subtle transition-all duration-normal motion-reduce:transform-none ${className}`}
     >
       {/* Header */}
       <div className="flex items-start gap-3">
@@ -59,7 +59,7 @@ export const EducationCard: React.FC<EducationCardProps> = ({ record, className 
           </div>
 
           {/* Institution & Location */}
-          <div className="flex items-center gap-1.5 text-xs text-fg-secondary">
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-fg-secondary">
             <MapPin className="h-3 w-3 text-fg-muted shrink-0" aria-hidden="true" />
             <span className="font-medium">{record.institution.name}</span>
             <span className="text-fg-muted">&bull;</span>

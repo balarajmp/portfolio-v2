@@ -12,20 +12,20 @@ import { Loader2, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm transition-all duration-normal ease-standard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm transition-all duration-normal ease-standard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] motion-reduce:transform-none motion-reduce:transition-none group",
   {
     variants: {
       variant: {
         primary:
-          "bg-accent-primary text-fg-inverse shadow-subtle hover:bg-accent-hover hover:shadow-lg hover:shadow-accent-glow/20",
+          "bg-accent-primary text-fg-inverse shadow-subtle hover:bg-accent-hover hover:shadow-lg hover:shadow-accent-glow/25 hover:-translate-y-0.5 active:translate-y-0",
         secondary:
-          "bg-bg-surface2 text-fg-primary border border-border-subtle hover:bg-bg-surfaceHover hover:border-border-strong hover:text-fg-primary",
+          "bg-bg-surface2 text-fg-primary border border-border-subtle hover:bg-bg-surfaceHover hover:border-border-strong hover:text-fg-primary hover:-translate-y-0.5 active:translate-y-0",
         ghost:
           "bg-transparent text-fg-secondary hover:bg-bg-surfaceHover hover:text-fg-primary",
         outline:
-          "bg-transparent text-fg-primary border border-border-default hover:bg-bg-surfaceHover hover:border-border-strong",
+          "bg-transparent text-fg-primary border border-border-default hover:bg-bg-surfaceHover hover:border-border-strong hover:-translate-y-0.5 active:translate-y-0",
         danger:
-          "bg-status-error-bg text-status-error-fg border border-status-error-border hover:bg-status-error-fg hover:text-white",
+          "bg-status-error-bg text-status-error-fg border border-status-error-border hover:bg-status-error-fg hover:text-white hover:-translate-y-0.5 active:translate-y-0",
       },
       size: {
         sm: "h-8 px-3 text-xs gap-1.5 min-w-[32px]",
@@ -99,11 +99,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             {loading ? (
               <Loader2 className="h-4 w-4 animate-spin shrink-0 text-current" />
             ) : (
-              LeftIcon && <LeftIcon className="h-4 w-4 shrink-0 text-current" />
+              LeftIcon && (
+                <LeftIcon className="h-4 w-4 shrink-0 text-current transition-transform duration-fast group-hover:-translate-x-0.5 motion-reduce:transform-none" />
+              )
             )}
             {children}
             {!loading && RightIcon && (
-              <RightIcon className="h-4 w-4 shrink-0 text-current" />
+              <RightIcon className="h-4 w-4 shrink-0 text-current transition-transform duration-fast group-hover:translate-x-0.5 motion-reduce:transform-none" />
             )}
           </>
         )}

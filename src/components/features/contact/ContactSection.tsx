@@ -5,6 +5,7 @@ import { Stack } from "@/components/ui/layout/Stack";
 import { Typography } from "@/components/ui/Typography";
 import { Badge } from "@/components/ui/Badge";
 import { Divider } from "@/components/ui/layout/Divider";
+import { FadeIn } from "@/components/ui/composite";
 import { ContactCard } from "./ContactCard";
 import { AvailabilityCard } from "./AvailabilityCard";
 import { SocialGrid } from "./SocialGrid";
@@ -35,7 +36,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }
     >
       <Stack gap={8} align="stretch">
         {/* ── Section Header ───────────────────────────────── */}
-        <div className="space-y-2 border-b border-border-subtle pb-4">
+        <FadeIn direction="up" className="space-y-2 border-b border-border-subtle pb-4">
           <div className="flex items-center gap-2">
             <Badge variant="accent" icon={MessageSquare} className="text-xs font-mono">
               Open to Opportunities
@@ -48,24 +49,30 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }
             Available for Software Engineer, Backend Developer, and Full-Stack Developer roles.
             Reach out directly — every recruiter message gets a personal reply.
           </Typography>
-        </div>
+        </FadeIn>
 
         {/* ── Quick Actions Bar ────────────────────────────── */}
-        <QuickActions />
+        <FadeIn direction="up" delay={0.1}>
+          <QuickActions />
+        </FadeIn>
 
         <Divider />
 
         {/* ── Two-column: Info cards (left) / Form (right) ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Left: Contact + Availability + Social */}
-          <Stack gap={5} align="stretch">
-            <ContactCard />
-            <AvailabilityCard />
-            <SocialGrid />
-          </Stack>
+          <FadeIn direction="up" delay={0.15}>
+            <Stack gap={5} align="stretch">
+              <ContactCard />
+              <AvailabilityCard />
+              <SocialGrid />
+            </Stack>
+          </FadeIn>
 
           {/* Right: Contact Form */}
-          <ContactForm />
+          <FadeIn direction="up" delay={0.25}>
+            <ContactForm />
+          </FadeIn>
         </div>
       </Stack>
     </Section>

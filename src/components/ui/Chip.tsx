@@ -80,13 +80,13 @@ export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
           selected
             ? "bg-accent-primary text-fg-inverse border-accent-primary shadow-subtle"
             : "bg-bg-surface1 text-fg-secondary border-border-subtle hover:bg-bg-surface2 hover:text-fg-primary hover:border-border-strong",
-          interactive && !disabled && "cursor-pointer active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-1 focus-visible:ring-offset-bg-canvas",
+          interactive && !disabled && "cursor-pointer active:scale-95 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-1 focus-visible:ring-offset-bg-canvas motion-reduce:transform-none motion-reduce:transition-none",
           disabled && "opacity-50 pointer-events-none",
           className
         )}
         {...props}
       >
-        {IconComponent && <IconComponent className="h-3.5 w-3.5 shrink-0" />}
+        {IconComponent && <IconComponent className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />}
         <span>{children}</span>
         {onRemove && (
           <button

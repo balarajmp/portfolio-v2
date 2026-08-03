@@ -58,7 +58,7 @@ export const CopyEmailButton: React.FC<CopyEmailButtonProps> = ({
   }, [copied]);
 
   return (
-    <div className="inline-flex items-center relative">
+    <div className={cn("inline-flex items-center relative", className)}>
       <Button
         variant={copied ? "secondary" : variant}
         size={size}

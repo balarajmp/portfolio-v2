@@ -121,10 +121,10 @@ export const NavigationItem = React.forwardRef<
         aria-current={active ? "page" : undefined}
         aria-label={item.ariaLabel || item.label}
         className={cn(
-          "relative py-1 font-sans text-xs font-medium transition-colors duration-fast select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus rounded-sm",
+          "relative py-1 font-sans text-xs font-medium transition-colors duration-fast select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg-canvas rounded-sm group",
           active
             ? "text-fg-primary font-semibold after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-accent-primary after:rounded-full"
-            : "text-fg-secondary hover:text-fg-primary",
+            : "text-fg-secondary hover:text-fg-primary after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-accent-primary/50 after:rounded-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-fast motion-reduce:after:transition-none",
           className
         )}
         {...props}
