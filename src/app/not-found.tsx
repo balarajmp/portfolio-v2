@@ -99,11 +99,11 @@ export default function NotFound() {
               Projects Case Studies
             </Link>
             <span className="text-border-strong">•</span>
-            <Link href="/#skills" className="hover:text-accent-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus rounded px-1.5 py-0.5">
+            <Link href="/#skills-matrix" className="hover:text-accent-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus rounded px-1.5 py-0.5">
               Skills Matrix
             </Link>
             <span className="text-border-strong">•</span>
-            <Link href="/#journey" className="hover:text-accent-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus rounded px-1.5 py-0.5">
+            <Link href="/#engineering-journey" className="hover:text-accent-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus rounded px-1.5 py-0.5">
               Engineering Journey
             </Link>
             <span className="text-border-strong">•</span>

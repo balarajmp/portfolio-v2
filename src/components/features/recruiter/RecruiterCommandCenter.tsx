@@ -26,7 +26,7 @@ export const RecruiterCommandCenter: React.FC<RecruiterCommandCenterProps> = ({
 }) => {
   return (
     <Section
-      id="recruiter-command-center"
+      id="recruiter"
       aria-label="Recruiter Command Center"
       spacing="md"
       containerSize="default"

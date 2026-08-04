@@ -27,13 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}#skills`,
+      url: `${baseUrl}#skills-matrix`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}#journey`,
+      url: `${baseUrl}#engineering-journey`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,

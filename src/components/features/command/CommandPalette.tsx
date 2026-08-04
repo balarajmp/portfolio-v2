@@ -227,7 +227,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
                   />
                   <CommandItem
                     value="Navigate to Skills Matrix Section"
-                    onSelect={() => handleNavigate("/#skills")}
+                    onSelect={() => handleNavigate("/#skills-matrix")}
                     title="Technical Skills Matrix"
                     description="Categorized backend, ML, database, and dev tool competencies"
                     category="Navigation"
@@ -236,7 +236,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
                   />
                   <CommandItem
                     value="Navigate to Engineering Journey Section"
-                    onSelect={() => handleNavigate("/#journey")}
+                    onSelect={() => handleNavigate("/#engineering-journey")}
                     title="Engineering Growth Journey"
                     description="Chronological timeline of technical learning and breakthroughs"
                     category="Navigation"
@@ -317,7 +317,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
                         <CommandItem
                           key={skill.id}
                           value={`Skill ${skill.name} ${category.name} ${skill.proficiency}`}
-                          onSelect={() => handleNavigate("/#skills")}
+                          onSelect={() => handleNavigate("/#skills-matrix")}
                           title={skill.name}
                           description={`${category.name} • ${skill.yearsOfExperience} yrs exp (${skill.proficiency})`}
                           category="Skills"
@@ -363,7 +363,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
                     <CommandItem
                       key={milestone.id}
                       value={`Milestone ${milestone.title} ${milestone.summary}`}
-                      onSelect={() => handleNavigate("/#journey")}
+                      onSelect={() => handleNavigate("/#engineering-journey")}
                       title={milestone.title}
                       description={`${milestone.date} • ${milestone.summary}`}
                       category="Journey"

@@ -23,7 +23,7 @@ export interface FeaturedProjectsProps {
 export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ className = "" }) => {
   return (
     <Section
-      id="featured-projects"
+      id="projects"
       aria-label="Featured Engineering Projects"
       spacing="lg"
       containerSize="default"

@@ -16,14 +16,14 @@ export const navigation: NavigationConfig = {
     {
       id: "nav-experience",
       label: "Journey",
-      url: "/#journey",
+      url: "/#engineering-journey",
       shortcut: "G J",
       ariaLabel: "Navigate to Journey & Education",
     },
     {
       id: "nav-skills",
       label: "Tech Stack",
-      url: "/#skills",
+      url: "/#skills-matrix",
       shortcut: "G S",
       ariaLabel: "Navigate to Tech Radar Matrix",
     },
@@ -51,13 +51,13 @@ export const navigation: NavigationConfig = {
     {
       id: "mob-journey",
       label: "Journey",
-      url: "/#journey",
+      url: "/#engineering-journey",
       iconName: "Briefcase",
     },
     {
       id: "mob-skills",
       label: "Skills",
-      url: "/#skills",
+      url: "/#skills-matrix",
       iconName: "Cpu",
     },
     {
@@ -74,8 +74,8 @@ export const navigation: NavigationConfig = {
       items: [
         { id: "cmd-home", label: "Go to Home Page", url: "/", shortcut: "G H" },
         { id: "cmd-projects", label: "Go to Featured Projects", url: "/#projects", shortcut: "G P" },
-        { id: "cmd-journey", label: "Go to Journey & Education", url: "/#journey", shortcut: "G J" },
-        { id: "cmd-skills", label: "Go to Tech Radar", url: "/#skills", shortcut: "G S" },
+        { id: "cmd-journey", label: "Go to Journey & Education", url: "/#engineering-journey", shortcut: "G J" },
+        { id: "cmd-skills", label: "Go to Tech Radar", url: "/#skills-matrix", shortcut: "G S" },
         { id: "cmd-about", label: "Go to About & Mindset", url: "/#about", shortcut: "G A" },
       ],
     },
@@ -104,8 +104,8 @@ export const navigation: NavigationConfig = {
       items: [
         { id: "ft-nav-home", label: "Home", url: "/" },
         { id: "ft-nav-projects", label: "Projects", url: "/#projects" },
-        { id: "ft-nav-journey", label: "Journey", url: "/#journey" },
-        { id: "ft-nav-skills", label: "Tech Stack", url: "/#skills" },
+        { id: "ft-nav-journey", label: "Journey", url: "/#engineering-journey" },
+        { id: "ft-nav-skills", label: "Tech Stack", url: "/#skills-matrix" },
       ],
     },
     {
